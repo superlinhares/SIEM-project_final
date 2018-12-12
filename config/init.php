@@ -51,7 +51,7 @@ if (isset($_SESSION['username'])) {
 * so they are only displayed once
 */
 if (isset($_SESSION['error_messages'])) {
-    $smarty->assign('ERROR MESSAGES', $_SESSION['error_messages']);
+    $smarty->assign('ERROR_MESSAGES', $_SESSION['error_messages']);
     unset($_SESSION['error_messages']);
 }
 

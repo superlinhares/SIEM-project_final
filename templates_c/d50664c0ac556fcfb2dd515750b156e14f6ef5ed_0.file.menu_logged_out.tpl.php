@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-05 14:28:07
+/* Smarty version 3.1.33, created on 2018-12-12 18:42:52
   from 'C:\inetpub\wwwroot\project_final\templates\common\menu_logged_out.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c07b647e4a595_99575798',
+  'unifunc' => 'content_5c112c7cde9ad3_01338503',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd50664c0ac556fcfb2dd515750b156e14f6ef5ed' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\common\\menu_logged_out.tpl',
-      1 => 1543393718,
+      1 => 1544629367,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c07b647e4a595_99575798 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c112c7cde9ad3_01338503 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <!--TODO: change Tutorial Restivo -->
 <!--
  <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
@@ -61,7 +61,8 @@ actions/users/login.php" method="post">
 
     <!-- SIGNUP POP-UP -->
     <div id="signup-modal-wrapper" class="modal">  
-    <form class="modal-content animate" action="includes/signup.inc.php" method="POST">
+    <form class="modal-content animate" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/actions/users/register.php" method="POST">
             
         <div class="imgcontainer">
         <span onclick="document.getElementById('signup-modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -70,6 +71,20 @@ actions/users/login.php" method="post">
         </div>
 
         <div class="container">
+        <label for="realname"><b>Real Name</b></label>
+        <input type="text" placeholder="Enter Real Name" name="realname" required>
+        <label for="email"><b>E-mail</b></label>
+        <input type="text" placeholder="E-mail" name="email" required>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required> 
+        <label for="dob"><b>Data de nascimento</b></label>
+        <input type="date" placeholder="dd/mm/yy" name="dob" required>
+        <button type="submit" name="submit">Registar</button>
+        <input type="checkbox" style="margin:26px 30px;"> Remember me      
+        <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>   
+        <!--
             <label for="first"><b>Nome</b></label>
             <input type="text" placeholder="Nome" name="first" required>
             <label for="last"><b>Apelido</b></label>
@@ -86,7 +101,7 @@ actions/users/login.php" method="post">
             <input type="password" placeholder="Enter Password" name="pwd" required>        
             <button type="submit" name="submit">Registar</button>
             <input type="checkbox" style="margin:26px 30px;"> Remember me      
-            <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+            <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>-->
         </div>		    
     </form>		  
     </div>

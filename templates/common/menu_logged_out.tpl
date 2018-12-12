@@ -36,7 +36,7 @@
 
     <!-- SIGNUP POP-UP -->
     <div id="signup-modal-wrapper" class="modal">  
-    <form class="modal-content animate" action="includes/signup.inc.php" method="POST">
+    <form class="modal-content animate" action="{$BASE_URL}/actions/users/register.php" method="POST">
             
         <div class="imgcontainer">
         <span onclick="document.getElementById('signup-modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -45,6 +45,20 @@
         </div>
 
         <div class="container">
+        <label for="realname"><b>Real Name</b></label>
+        <input type="text" placeholder="Enter Real Name" name="realname" required>
+        <label for="email"><b>E-mail</b></label>
+        <input type="text" placeholder="E-mail" name="email" required>
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required> 
+        <label for="dob"><b>Data de nascimento</b></label>
+        <input type="date" placeholder="dd/mm/yy" name="dob" required>
+        <button type="submit" name="submit">Registar</button>
+        <input type="checkbox" style="margin:26px 30px;"> Remember me      
+        <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>   
+        <!--
             <label for="first"><b>Nome</b></label>
             <input type="text" placeholder="Nome" name="first" required>
             <label for="last"><b>Apelido</b></label>
@@ -61,7 +75,7 @@
             <input type="password" placeholder="Enter Password" name="pwd" required>        
             <button type="submit" name="submit">Registar</button>
             <input type="checkbox" style="margin:26px 30px;"> Remember me      
-            <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+            <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>-->
         </div>		    
     </form>		  
     </div>

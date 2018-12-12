@@ -1,9 +1,9 @@
 <?php
 
-    function createUser($realname, $username, $password){
+    function createUser($realname, $email, $username, $dob, $password){
         global $conn;
-        $stmt = $conn->prepare("INSERT INTO users VALUES (?, ?, ?)");
-        $stmt->execute(array($realname, $username, sha1($password))); //TODO: alterar password para prevenir ataques
+        $stmt = $conn->prepare('INSERT INTO users(real_name, email, username, password, dob, admin) VALUES (?, ?, ?, ?, ?, false)');
+        $stmt->execute(array($realname, $email, $username, sha1($password), $dob)); //TODO: alterar password para prevenir ataques
     }
 
     function isLoginCorrect($username, $password){
