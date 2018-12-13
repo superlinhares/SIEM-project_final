@@ -7,4 +7,4 @@
     <button type="submit" name="submit" class="logout">Logout</button>
     </form>
 </li>
-<li><a href="cart.php" class="shopping-cart"><img src="../img/cart.png" alt="shopping-cart"></a></li>
+<li><a href="cart.php" class="shopping-cart"><img src="{$BASE_URL}/img/cart.png" alt="shopping-cart"></a></li>

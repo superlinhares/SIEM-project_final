@@ -13,7 +13,7 @@
 <!-- LOGIN POP-UP -->
 <div id="modal-wrapper">
     <div id="login-modal-wrapper" class="modal">  
-        <form class="modal-content animate" action="includes/login.inc.php" method="POST">
+        <form class="modal-content animate" action="{$BASE_URL}/actions/users/login.php" method="POST">
 
             <div class="imgcontainer">
                 <span onclick="document.getElementById('login-modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -22,10 +22,10 @@
             </div>
 
             <div class="container">
-                <label for="uid"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uid" required>
-                <label for="pwd"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pwd" required>        
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" required>        
                 <button type="submit" name="submit">Login</button>
                 <input type="checkbox" style="margin:26px 30px;"> Lembrar     
                 <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>

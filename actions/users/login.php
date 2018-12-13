@@ -1,6 +1,6 @@
 <?php
     include_once('../../config/init.php');
-    include_once($BASE_DIR . 'database/users.php');
+    include_once($BASE_DIR . '/database/users.php');
 
     // Test if all required fields are present. Redirect the user to previous page otherwise
     if (!$_POST['username'] || !$_POST['password']) {
