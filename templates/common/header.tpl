@@ -10,7 +10,7 @@
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/styles.css">
         <!-- jQuery integration -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="{$BASE_URL}javascript/main.js" defer></script>
+        <script src="{$BASE_URL}/javascript/main.js" defer></script>
  
     </head>
     <body>
@@ -25,9 +25,9 @@
                         <!-- TODO: Fazer isto compatível com a nova estrutura -->						          
                         <li><a href="{$BASE_URL}/pages/about/about.php">Sobre</a></li>
                         <li><a href="{$BASE_URL}/pages/store/list_all.php">Loja</a></li>
-                        <li><a href="{$BASE_URL}/pages/contact/contact.php">Contactos</a></li>
+                        <li><a href="{$BASE_URL}/pages/contacts/contacts.php">Contactos</a></li>
                         <li><a href="{$BASE_URL}/pages/faq/faq.php">FAQ</a></li>
-                        <!-- FIXME: Select wich menu to show -->
+                        <!-- Select wich menu to show -->
                         {if isset($USERNAME)}
                             {include file="common/menu_logged_in.tpl"}
                         {else}

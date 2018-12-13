@@ -1,5 +1,31 @@
-<!-- Header -->
-{include file="common/header.tpl"}
+<?php
+/* Smarty version 3.1.33, created on 2018-12-13 18:56:18
+  from 'C:\inetpub\wwwroot\project_final\templates\about\about.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5c128122a82e57_27045783',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '6699789986b49c7902695278d23dbbf3c73eff14' => 
+    array (
+      0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\about\\about.tpl',
+      1 => 1544716568,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+    'file:common/header.tpl' => 1,
+    'file:common/footer.tpl' => 1,
+  ),
+),false)) {
+function content_5c128122a82e57_27045783 (Smarty_Internal_Template $_smarty_tpl) {
+?><!-- Header -->
+<?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
 <!-- Main -->
 <section class="about-intro">
@@ -20,8 +46,11 @@
 	</section>
 
 	<section class="about-wrap-right">
-		<img class="about-img" src="{$BASE_URL}/img/about-food.jpg">
+		<img class="about-img" src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/img/about-food.jpg">
 	</section>
 
 <!-- Footer -->
-{include file="common/footer.tpl"}
+<?php $_smarty_tpl->_subTemplateRender("file:common/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+}
+}

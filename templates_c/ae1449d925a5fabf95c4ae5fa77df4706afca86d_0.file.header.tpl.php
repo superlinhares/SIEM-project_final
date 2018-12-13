@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-12 14:21:00
+/* Smarty version 3.1.33, created on 2018-12-13 19:17:33
   from 'C:\inetpub\wwwroot\project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c10ef1cba0233_31941625',
+  'unifunc' => 'content_5c12861db74467_36989232',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae1449d925a5fabf95c4ae5fa77df4706afca86d' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\common\\header.tpl',
-      1 => 1544537484,
+      1 => 1544717845,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c10ef1cba0233_31941625 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c12861db74467_36989232 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -41,7 +41,7 @@ function content_5c10ef1cba0233_31941625 (Smarty_Internal_Template $_smarty_tpl)
 >
         <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-javascript/main.js" defer><?php echo '</script'; ?>
+/javascript/main.js" defer><?php echo '</script'; ?>
 >
  
     </head>
@@ -62,7 +62,7 @@ javascript/main.js" defer><?php echo '</script'; ?>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/store/list_all.php">Loja</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/contact/contact.php">Contactos</a></li>
+/pages/contacts/contacts.php">Contactos</a></li>
                         <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/faq/faq.php">FAQ</a></li>
                         <!-- FIXME: Select wich menu to show -->
