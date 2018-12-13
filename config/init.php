@@ -44,6 +44,13 @@ if (isset($_SESSION['username'])) {
     $smarty->assign('USERNAME', $_SESSION['username']);
 }
 
+/**
+ * Admin credential
+ */
+if(isset($_SESSION['admin'])){
+    $smarty->assign('ADMIN', $_SESSION['admin']);
+}
+
 /*
 * Error handling code
 * Make every page capable of receiving error messages

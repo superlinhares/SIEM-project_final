@@ -9,7 +9,7 @@
         $stmt = $conn->prepare('SELECT *
                                 FROM products');
         $stmt->execute();
-        return $stmt->fetchall();
+        return $stmt->fetchAll();
     }
 
     function getProduct($productID){

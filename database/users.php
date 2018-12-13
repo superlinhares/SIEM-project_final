@@ -15,4 +15,14 @@
         return $stmt->fetch() == true;
     }
 
+    function isUserAdmin($username){
+        global $conn;
+        $stmt = $conn->prepare("SELECT *
+                                FROM users
+                                WHERE username = ?");
+        $stmt->execute(array($username));
+        $row = $stmt->fetch();
+        return $row['admin'];
+    }
+
 ?>
