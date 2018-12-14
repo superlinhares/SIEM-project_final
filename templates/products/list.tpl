@@ -3,13 +3,15 @@
 
 <!-- Main -->
 <section id='products'>
-    <h2>Products</h2>
+    <h2>Produtos</h2>
 
     {foreach from=$products item=$product}
         <article class="product-data">
             <!-- TODO: Acrescentar as descrições dos produtos-->
             <!--Clicar no produto passa para a pg do produto -->
-            <a href="{$BASE_URL}/pages/store/list_product.php?productID={$products.id}"><img src="" alt=""></a>
+            <h2 class="selected-dish-labels">Nome do prato</h2>		
+            <p class="selected-dish-description">{$product.name}</p> 
+            <a href="{$BASE_URL}/pages/store/list_product.php?productID={$product.id}"><img src="{$BASE_URL}/{$product.img}" alt="{$product.id}"></a>
         </article>
     {/foreach}
    

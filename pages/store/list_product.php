@@ -1,9 +1,9 @@
 <?php 
 include_once ('../../config/init.php');
-include_once ($BASE_DIR . 'database/products.php');
+include_once ($BASE_DIR . '/database/products.php');
 
 // Redirect to home page and display error message
-if (!$_GET['product_ID']) {
+if (!$_GET['productID']) {
     $_SESSION['error_messages'][] = 'Undefined product';
     header("Location: $BASE_URL");
     exit;
