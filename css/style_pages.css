@@ -1,0 +1,55 @@
+/* Home Page Styling*/
+/* First section*/
+section.home-first-section{
+  margin: 0;
+  min-height: 40em;
+  height: 100%;    
+  background-image: url("../img/index_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;    
+}
+
+
+/* Store page */
+#products{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2em;
+  grid-template-areas: 
+  "";
+}
+
+article.product-data{
+  display: grid;
+  grid-template-columns: 1em auto 1em;
+  grid-template-rows: 1em auto 1em auto 1em auto 1em;
+  grid-template-areas:
+  ". . ." 
+  ". dish-name ."
+  ". . ."
+  ". dish-img ."
+  ". . ."
+  ". dish-order ."
+  ". . .";
+  max-width: 22em;  
+  border-radius: 4px;
+	/*transition: .4s;
+	background: #83BB66;*/
+	border: 2px solid green;
+}
+
+#products > article.product-data img{
+  width: 20em;
+}
+
+#products > article.product-data .dish-name{
+  grid-area: dish-name;
+}
+
+#products > article.product-data .dish-img{
+  grid-area: dish-img;
+}
+
+#products > article.product-data .dish-order{
+  grid-area: dish-order;
+}

@@ -26,8 +26,7 @@
 
 	<section class="social">
 		
-	</section>
-		
+	</section>		
 </div>
 
 <!-- Footer -->

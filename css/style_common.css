@@ -1,0 +1,281 @@
+/*
+Start of the stylesheet
+Authors: Pedro Oliveira and Gonçalo Lemos
+*/
+
+/* Font */
+@font-face{
+	src: url(../fonts/Borealis.ttf);
+	font-family: borealis;
+}
+
+html{
+  background-color: white;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "header header header"
+  "content content content"
+  "footer footer footer";
+
+}
+
+/* Header styling */
+#header{
+  grid-area: header;
+  background-color: #83BB66;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: 
+  "logo nav";
+}
+
+/* Logo styling */
+#logo{
+  grid-area: logo;
+}
+
+#logo img.logo{
+	float: left;
+  height: 5em;
+  padding: 5px 0 5px 1em;	
+}
+
+/* Navigation bar styling */
+#nav{
+  grid-area: nav;
+}
+
+#nav > ul {
+	font-size: 1.5em;	
+	word-spacing: 2em;
+	list-style: none;
+	padding: 1em 5em 1em 0em;
+}
+
+#nav > ul > li {
+  display: inline-block;
+  position: relative;    	
+}
+
+/* Hyperlink styling */
+#nav a {
+	font-family: 'Karla', sans-serif;
+  font-weight: 400;
+	color: white;
+	text-decoration: none;
+	font-variant: small-caps;
+	cursor: pointer;
+}
+
+#nav span.username{
+  color: white;
+}
+
+/* Shopping cart img */
+#nav img.shopping-cart{
+	height: 1em;
+}
+
+/* Content styling */
+#content{
+  grid-area: content;
+}
+
+/* Footer styling */  
+#footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: auto auto auto;	
+  grid-template-areas: 
+  "footer-start"
+  "footer-container"
+  "footer-end";
+}
+
+#footer > .footer-start {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1em 1fr 2em 1fr 1em;
+  grid-template-areas:
+  ". . ." 
+  ". footer-start-header ."
+  ". . ."
+  ". footer-start-footer ."
+  ". . .";
+	background-image: url("../img/mesa.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer > section.footer-start > header.footer-start-header{
+  grid-area: footer-start-header;
+  justify-self: center;
+}
+
+#footer > section.footer-start > header.footer-start-header > h1{
+  justify-self: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: borealis;
+  padding-top: 1em;
+}
+
+#footer > section.footer-start > footer.footer-start-footer{
+  grid-area: footer-start-footer;
+  justify-self: center;
+}
+
+#footer > section.footer-start > footer.footer-start-footer button{
+  justify-self: center;
+  position: relative;
+	width: 200px;
+	font-size: 1.5em;
+	border-radius: 6px;
+	transition: .4s;
+	background: #83BB66;
+	box-shadow: 5px 4px 5px black;
+	border-top: none;
+	border-left: none;
+	border-bottom: 4px solid darkgreen;
+	border-right: 4px solid darkgreen;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#footer > .footer-container {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1em 1fr 1fr 1fr 1em;
+  grid-template-rows: 2em auto 2em;
+  grid-gap: 1em;
+  grid-template-areas: 
+  ". . . . ."
+  ". footer-left footer-center footer-right ."
+  ". . . . .";
+}
+
+#footer > .footer-container h1{
+  color: #83BB66;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#footer > .footer-container > .footer-left{
+  grid-area: footer-left;
+}
+
+#footer > .footer-container > .footer-center{
+  grid-area: footer-center;  
+}
+
+#footer > .footer-container > .footer-center a{
+  text-decoration: none;
+}
+
+#footer > .footer-container > .footer-center h1 > a{
+  color: #83BB66;
+}
+
+#footer > .footer-container > .footer-center ul.link-info a{
+  color: black;
+  font-size: 1.2em;
+}
+
+#footer > .footer-container > .footer-center ul > li:not(:last-child){
+  margin-bottom: 0.5em;
+}
+
+#footer > .footer-container > .footer-right{
+  grid-area: footer-right;
+}
+
+#footer > .footer-container > .footer-right img.social-logo {
+  width: 2.5em;
+  margin: 1em 2em 0em 0em;
+}
+
+#footer > .footer-end {
+	background: #83BB66;
+	width: 100%;
+}
+
+#footer > .footer-end p {
+  color: white;
+	padding: 1em;
+	text-align: left;
+	font-size: 1em;
+}
+
+
+/* Error message styling */
+#messages{
+    width: 40em;
+}
+#messages{
+    width: 40em;
+    margin: 0 auto;
+}
+
+#messages div{
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+}
+
+#messages .error{
+    background-color: #F99;
+    color: #333;
+}
+
+#messages .success{
+    background-color: #9F9;
+    color: #333;
+}
+
+#comment_form{
+    background-color: white;
+    padding: 5px;
+}
+
+#comment_form form{
+    width: 100%;
+    display: flex;
+}
+
+#comment_form textarea{
+    border: none;
+    flex-grow: 1;
+    margin: 1em;
+    padding: 1em;
+}
+
+#comment_form input{
+    background-color: white;
+    color: #000;
+    border: none;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+#messages .close {
+    float: right;
+    text-decoration: none;
+    color: #333;
+  }
+  
+/* End */

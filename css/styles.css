@@ -193,7 +193,7 @@ nav li {
 /* design das hiperligações */
 nav a {
 	font-family: 'Karla', sans-serif;
-  	font-weight: 400;
+	font-weight: 400;
 	color: white;
 	text-decoration: none;
 	font-variant: small-caps;
@@ -361,13 +361,13 @@ section.home-second-section li.image-inline{
 	width: 10em;	
 }
 
-section.start {
+.start {
 	background-image: url("../img/mesa.jpg");
 	background-repeat: no-repeat;
     background-size: cover;
     height: 15em;
 }
-section.start p{	
+.start p{	
     text-align: center;
     color: white;
     font-weight: bold;
@@ -376,7 +376,7 @@ section.start p{
     padding-top: 6%;
 }
 
-section.start button{
+.start button{
 	margin: auto;
 	position: relative;
 	width: 200px;
@@ -393,11 +393,11 @@ section.start button{
 	cursor: pointer;
 	padding: 10px;
 }
-section.start button:focus {
+.start button:focus {
 	outline: none;
 }
 
-section.start button:hover {
+.start button:hover {
 	background: green;
 	opacity: 1;
 }
@@ -1086,13 +1086,13 @@ p.p-answer {
 	clear: both;
 }
 
-section.footer-end p {
+.footer-end p {
 	padding: 1em;
 	text-align: left;
 	font-size: 14pt;
 }
 
-section.footer-end {
+.footer-end {
 	background: #83BB66;
 	width: 100%;
 }
