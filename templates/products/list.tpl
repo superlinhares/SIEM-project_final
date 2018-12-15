@@ -2,9 +2,11 @@
 {include file="common/header.tpl"}
 
 <!-- Main -->
-<section id='products'>
-    <h1>Produtos</h1>
-
+<div id="store">
+  <header class="store-header">
+    <h1 class="page-title">Os Nossos Pratos</h1>
+  </header>
+  <section id='products'>    
     {foreach from=$products item=$product}
         <article class="product-data">
             <!-- TODO: Acrescentar as descrições dos produtos-->
@@ -23,9 +25,9 @@
               <input type="submit" name="add_to_cart" value="Adicionar ao Carrinho">
             </div>
         </article>
-    {/foreach}
-   
-</section>
+    {/foreach}    
+  </section>
+</div>
 
 <!--FIXME: Comments only for individual products
 {if isset($USERNAME)}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-15 23:41:06
+/* Smarty version 3.1.33, created on 2018-12-16 00:26:11
   from 'C:\inetpub\wwwroot\project_final\templates\products\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1566e2007635_31254954',
+  'unifunc' => 'content_5c1571733dc9c3_64137480',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '89d7828fb477be644616665c4804fa6af477ff58' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\products\\list.tpl',
-      1 => 1544906461,
+      1 => 1544909125,
       2 => 'file',
     ),
   ),
@@ -22,15 +22,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c1566e2007635_31254954 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1571733dc9c3_64137480 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
 <!-- Main -->
-<section id='products'>
-    <h1>Produtos</h1>
-
+<div id="store">
+  <header class="store-header">
+    <h1 class="page-title">Os Nossos Pratos</h1>
+  </header>
+  <section id='products'>    
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product');
 if ($_from !== null) {
@@ -65,9 +67,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
     <?php
 }
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-   
-</section>
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>    
+  </section>
+</div>
 
 <!--FIXME: Comments only for individual products
 <?php if (isset($_smarty_tpl->tpl_vars['USERNAME']->value)) {?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-15 23:05:54
+/* Smarty version 3.1.33, created on 2018-12-16 00:01:27
   from 'C:\inetpub\wwwroot\project_final\templates\common\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c155ea2520eb5_68630244',
+  'unifunc' => 'content_5c156ba7bba6d4_10314286',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fa1b85daa8d3069fd788010b71498299d7068c7e' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\common\\footer.tpl',
-      1 => 1544903892,
+      1 => 1544907386,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c155ea2520eb5_68630244 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c156ba7bba6d4_10314286 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- End of content -->
   </div>
 <!-- Still container -->
@@ -31,7 +31,7 @@ function content_5c155ea2520eb5_68630244 (Smarty_Internal_Template $_smarty_tpl)
         <h1>Vamos Começar!</h1>
       </header>
 			<footer class="footer-start-footer">
-        <a href="store.php"><button>Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
+        <a href="store.php"><button class="default-button">Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
       </footer>
 		</section>
 

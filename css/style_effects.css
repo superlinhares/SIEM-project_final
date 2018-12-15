@@ -59,16 +59,17 @@
 	}
 }
 
-/* Footer effects */
-#footer > section.footer-start > footer.footer-start-footer button:focus {
+/* Button effects */
+button.default-button:focus, input[type=submit]:focus {
 	outline: none;
 }
 
-#footer > section.footer-start > footer.footer-start-footer button:hover {
+button.default-button:hover, input[type=submit]:hover {
 	background: green;
 	opacity: 1;
 }
 
+/* Footer effects */
 #footer > .footer-container > nav.footer-center a:hover {
 	color: lightgreen;
 	transition: all ease-in-out 200ms;

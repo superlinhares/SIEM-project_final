@@ -11,11 +11,44 @@ section.home-first-section{
 
 
 /* Store page */
-#products{
-  display:grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 2em;
+#store{
+  display:grid;  
+  grid-template-rows: 20em auto;
+  grid-gap: 2em; 
   grid-template-areas: 
+  "store-header"
+  "products";
+}
+
+#store > header.store-header{
+  grid-area: store-header;
+  background-image: url("../img/healthy-food-2.jpg");
+	background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: 
+  "."
+  "page-title"
+  ".";  
+}
+
+#store > header.store-header > h1.page-title{
+  grid-area: page-title;
+  justify-self: center;
+  color: white;
+  font-family: borealis;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#products{
+  grid-area: products;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 2em;
+  grid-template-areas:  
   "";
 }
 

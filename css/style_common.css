@@ -137,24 +137,6 @@ body{
   justify-self: center;
 }
 
-#footer > section.footer-start > footer.footer-start-footer button{
-  justify-self: center;
-  position: relative;
-	width: 200px;
-	font-size: 1.5em;
-	border-radius: 6px;
-	transition: .4s;
-	background: #83BB66;
-	box-shadow: 5px 4px 5px black;
-	border-top: none;
-	border-left: none;
-	border-bottom: 4px solid darkgreen;
-	border-right: 4px solid darkgreen;
-	color: white;
-	cursor: pointer;
-	padding: 10px;
-}
-
 #footer > .footer-container {
   background-color: white;
   display: grid;
@@ -218,6 +200,25 @@ body{
 	padding: 1em;
 	text-align: left;
 	font-size: 1em;
+}
+
+/* Button styling */
+button.default-button, input[type=submit]{
+  justify-self: center;
+  position: relative;
+	width: 200px;
+	font-size: 1.5em;
+	border-radius: 6px;
+	transition: .4s;
+	background: #83BB66;
+	box-shadow: 5px 4px 5px black;
+	border-top: none;
+	border-left: none;
+	border-bottom: 4px solid darkgreen;
+	border-right: 4px solid darkgreen;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
 }
 
 
