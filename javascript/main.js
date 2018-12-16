@@ -1,10 +1,11 @@
+/// <reference path="../typings/globals/jquery/index.d.ts" />
+
 initMessageOpeners();
 
 $(document).ready(function() {    
     initMessageClosers();
     initMessageClosersOnClick();
 });
-
 
 function initMessageOpeners(){
   $('.message').fadeIn(1000);

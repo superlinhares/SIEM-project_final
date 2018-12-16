@@ -3,25 +3,39 @@
 
 <!-- Main -->
 <div id="home">	
-	<section class="home-first-section">
-		<p class="first_p">Dietas personalizadas e sem trabalho!</p>
+	<section id="home-first-section">
+		<p class="first-p">Dietas personalizadas e sem trabalho!</p>
 
 		<div class="small-container">
 			<p>Entregas em todo o país!</p>
 		</div>
 		
-		<p class="second_p">Comida deliciosa e saudável entregue à sua porta!</p>
+		<p class="second-p">Comida deliciosa e saudável entregue à sua porta!</p>
 
-		<a href="store.php"><button>Fazer Pedido</button></a>
+		<a href="store.php" class="order-button"><button class="default-button">Fazer Pedido</button></a> <!-- FIXME: posição do botão ao fazer scroll -->
 		
 	</section>
-	<section class="home-second-section">
-		<ul class="image-list">
-			<li class="image-inline"><img src="{$BASE_URL}/img/online.png" alt="Online" class="list-img"><br>Encomenda Online</li>
-			<li class="image-inline"><img src="{$BASE_URL}/img/delivery-truck.png" alt="Delivery" class="list-img"><br>Entregue em menos de 24h</li>
-			<li class="image-inline"><img src="{$BASE_URL}/img/chef.png" alt="Chef" class="list-img"><br><br>Preparado pelos melhores chefs</li>
-			<li class="image-inline"><img src="{$BASE_URL}/img/microwave-oven.png" alt="Microwave" class="list-img"><br>Aquecer e comer - Pronto em menos de 3 minutos</li>
-		</ul>		
+
+	<section id="home-second-section">
+    <div class="first-col">
+			<img src="{$BASE_URL}/img/online.png" alt="Online" class="div-img">
+      <p class="div-p">Encomenda Online</p>    
+    </div>
+
+    <div class="second-col">
+			<img src="{$BASE_URL}/img/delivery-truck.png" alt="Delivery" class="div-img">
+      <p class="div-p">Entregue em menos de 24h</p>    
+    </div>
+
+    <div class="third-col">
+      <img src="{$BASE_URL}/img/chef.png" alt="Chef" class="div-img">
+      <p class="div-p">Preparado pelos melhores chefs</p>    
+    </div>   
+
+    <div class="forth-col">
+			<img src="{$BASE_URL}/img/microwave-oven.png" alt="Microwave" class="div-img">
+      <p class="div-p">Aquecer e comer - Pronto em menos de 3 minutos</p>		    
+    </div>		
 	</section>
 
 	<section class="social">

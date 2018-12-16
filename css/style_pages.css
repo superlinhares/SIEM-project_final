@@ -1,14 +1,118 @@
 /* Home Page Styling*/
-/* First section*/
-section.home-first-section{
-  margin: 0;
-  min-height: 40em;
-  height: 100%;    
-  background-image: url("../img/index_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;    
+#home{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 3em;
+  grid-template-areas: 
+  "first-section"
+  "second-section";
 }
 
+#home-first-section{
+  grid-area: first-section;  
+  min-height: 40em;  
+  background-image: url("../img/index_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 7em auto auto auto 2em;
+  grid-template-rows: 5em auto 0.5em auto 0.5em auto 1em auto 5em;
+  grid-template-areas: 
+  ". . . . ."
+  ". first-p . . ."
+  ". . . . ."
+  ". small-container . . ."
+  ". . . . ."
+  ". second-p . . ."
+  ". . . . ."
+  ". order-button . . ."
+  ". . . . .";    
+}
+
+.first-p {
+  grid-area: first-p;
+	font-size: 2em;
+	color:white;
+	font-family: borealis;
+	font-weight: bold;
+}
+
+.small-container {
+  grid-area: small-container;	
+  border: none;
+  height: 1em;
+	color: white;
+	border-radius: 5px;
+	background-color: #83BB66;
+	padding: 1em;
+	text-align: center;
+	width: 12em;	
+	font-size: 14pt;
+	font-family: Karla;
+}
+
+p.second-p{
+  grid-area: second-p;
+	font-size: 2em;
+	color: white;
+	font-family: borealis;
+	font-weight: bold;
+}
+
+.order-button{
+  grid-area: order-button;
+}
+
+.order-button > button{
+	width: 7em;
+	font-size: 2em;
+	border-radius: 6px;
+	transition: .4s;
+	background: #83BB66;
+	box-shadow: 5px 4px 5px black;
+	border-top: none;
+	border-left: none;
+	border-bottom: 4px solid darkgreen;
+	border-right: 4px solid darkgreen;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+#home-second-section{
+  grid-area: second-section;
+  display: grid;
+  grid-template-columns: 2em 1fr 1fr 1fr 1fr 2em;
+  grid-template-areas: 
+  ". first-col second-col third-col forth-col .";
+}
+
+#home-second-section .first-col{
+  grid-area: first-col;
+  justify-self: center;  
+}
+
+#home-second-section .second-col{
+  grid-area: second-col;
+  justify-self: center;
+}
+#home-second-section .third-col{
+  grid-area: third-col;
+  justify-self: center;
+}
+#home-second-section .forth-col{
+  grid-area: forth-col;
+  justify-self: center;
+}
+
+#home-second-section div{
+  max-width: 16em;
+  text-align: center;
+}
+
+#home-second-section .div-img{
+  width: 10em;
+}
 
 /* Store page */
 #store{
