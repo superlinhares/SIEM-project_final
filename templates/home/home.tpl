@@ -12,7 +12,7 @@
 		
 		<p class="second-p">Comida deliciosa e saudável entregue à sua porta!</p>
 
-		<a href="store.php" class="order-button"><button class="default-button">Fazer Pedido</button></a> <!-- FIXME: posição do botão ao fazer scroll -->
+		<a href="store.php" class="order-button"><button class="default-button">Fazer Pedido</button></a> 
 		
 	</section>
 
