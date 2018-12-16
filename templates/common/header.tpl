@@ -11,11 +11,12 @@
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_common.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_pages.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_effects.css">
+        <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_popup.css">
         <!--<link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/styles.css">-->
         
         <!-- jQuery integration -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="{$BASE_URL}/javascript/main.js" defer></script>
+        <script src="{$BASE_URL}/javascript/main.js" <!--defer-->></script>
  
     </head>
     <body>
@@ -45,13 +46,13 @@
               <section id="messages">
                   {if (isset($ERROR_MESSAGES))}
                       {foreach $ERROR_MESSAGES as $error}
-                          <div class="error">{$error} <a class="close" href="#">&#215;</a></div>                        
+                          <div class="message error">{$error} <!--<a class="close" href="#">&#215;</a>--></div>                        
                       {/foreach}
                   {/if}
 
                   {if isset($SUCCESS_MESSAGES)}
-                      {foreach $SUCCESS_MESSAGES as $success}
-                          <div class="success">{$success} <a class="close" href="#">&#215;</a></div>                        
+                      {foreach $SUCCESS_MESSAGES as $success}                           
+                          <div class="message success">{$success}</div>                                               
                       {/foreach}
                   {/if}                
               </section>                

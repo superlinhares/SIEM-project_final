@@ -14,7 +14,7 @@
           <span class="dish-label name-label">Nome do prato</span>
           <p class="dish-name">{$product.name}</p> 
           <a class="dish-img" href="{$BASE_URL}/pages/store/list_product.php?productID={$product.id}"><img src="{$BASE_URL}/{$product.img}" alt="{$product.id}"></a>
-          <!--TODO: insesir botão de adicionar ao carrinho-->
+          <!--TODO: inserir botão de adicionar ao carrinho-->
           <div class="dish-order">
             <span class="dish-label price-label">Preço / unidade</span>
             <span class="dish-price">{$product.price} €</span>
