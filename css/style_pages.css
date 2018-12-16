@@ -43,39 +43,49 @@ section.home-first-section{
 }
 
 #products{
+  margin: 2em;
   grid-area: products;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 2em;
-  grid-template-areas:  
-  "";
 }
 
 article.product-data{
+  width: 22em; 
   display: grid;
+  justify-self: center;
   grid-template-columns: 1em auto 1em;
-  grid-template-rows: 1em auto 1em auto 1em auto 1em;
+  grid-template-rows: 1em auto 1em auto 1em auto 1em auto 1em;
   grid-template-areas:
   ". . ." 
+  ". name-label ."
+  ". . ."
   ". dish-name ."
   ". . ."
   ". dish-img ."
   ". . ."
   ". dish-order ."
   ". . .";
-  max-width: 22em;  
   border-radius: 4px;
-	/*transition: .4s;
-	background: #83BB66;*/
 	border: 2px solid green;
+}
+
+#products .dish-label{
+  font-family: borealis;
+  font-size: 1em;
+  color: #83BB66;
+}
+
+#products > article.product-data > .name-label{
+  grid-area: name-label;
 }
 
 #products > article.product-data img{
   width: 20em;
 }
 
-#products > article.product-data .dish-name{
+#products > article.product-data p.dish-name{
   grid-area: dish-name;
 }
 
@@ -83,6 +93,39 @@ article.product-data{
   grid-area: dish-img;
 }
 
-#products > article.product-data .dish-order{
+#products > article.product-data > .dish-order{
   grid-area: dish-order;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1em auto 1em auto;  
+  grid-template-areas:
+  "price-label dish-price" 
+  ". ."
+  "quantity-label order-quantity"
+  ". ."
+  "dish-add-to-cart dish-add-to-cart"; 
+}
+
+#products .product-data > .dish-order > .price-label{
+  grid-area: price-label;
+}
+
+#products .product-data > .dish-order > .dish-price{
+  grid-area: dish-price;
+}
+
+#products .product-data > .dish-order > .quantity-label{
+  grid-area: quantity-label;  
+}
+
+#products .product-data > .dish-order > input[type=text].order-quantity{
+  grid-area: order-quantity;
+  width: 2em;
+}
+
+#products > article.product-data .dish-order > .dish-add-to-cart{
+  grid-area: dish-add-to-cart;
+  justify-self: center;
+  font-size: 1em;
+  width: 11em;
 }
