@@ -1,21 +1,29 @@
 <table class='store-table'>
   <tr>
-    <th width="40%">Produto</th>
-    <th width="10%">Quantidade</th>
-    <th width="20%">Preço</th>
-    <th width="15%">Sub-Total</th>
-    <th width="5%">Ação</th>
+    <th>Produto</th>
+    <th>Preço</th>
+    <th>Quantidade</th>
+    <th>Sub-Total</th>
+    <th>Remover</th>
   </tr>
 
   {foreach from=$SHOPPING_CART  item=$product}
     <tr>
       <td>{$product.name}</td>
-      <td>{$product.quantity}</td>			
       <td>{$product.price} €</td>
+      <td>
+        <select name="{$product.id}-quantity" value="{$product.quantity}">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </td>
       <td>{$productTotal[$product.id]} €</td>
       <td>
         <a href="{$BASE_URL}/actions/order/add_to_cart.php?action=delete&id={$product.id}">
-          <div class="btn-danger">Remove</div>
+          <i class="fas fa-trash" style="color: red"></i>
         </a>
       </td>	
     </tr>

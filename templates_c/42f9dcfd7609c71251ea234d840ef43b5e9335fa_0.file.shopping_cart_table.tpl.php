@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-18 14:20:14
+/* Smarty version 3.1.33, created on 2018-12-18 17:07:59
   from 'C:\inetpub\wwwroot\project_final\templates\shopping_cart\shopping_table\shopping_cart_table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c18d7eec90fc7_37103043',
+  'unifunc' => 'content_5c18ff3f089863_79694044',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42f9dcfd7609c71251ea234d840ef43b5e9335fa' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\shopping_cart\\shopping_table\\shopping_cart_table.tpl',
-      1 => 1545131979,
+      1 => 1545142076,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c18d7eec90fc7_37103043 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18ff3f089863_79694044 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table class='store-table'>
   <tr>
-    <th width="40%">Produto</th>
-    <th width="10%">Quantidade</th>
-    <th width="20%">Preço</th>
-    <th width="15%">Sub-Total</th>
-    <th width="5%">Ação</th>
+    <th>Produto</th>
+    <th>Preço</th>
+    <th>Quantidade</th>
+    <th>Sub-Total</th>
+    <th>Remover</th>
   </tr>
 
   <?php
@@ -38,17 +38,26 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
     <tr>
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 </td>
-      <td><?php echo $_smarty_tpl->tpl_vars['product']->value['quantity'];?>
-</td>			
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
  €</td>
+      <td>
+        <select name="<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
+-quantity" value="<?php echo $_smarty_tpl->tpl_vars['product']->value['quantity'];?>
+">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </td>
       <td><?php echo $_smarty_tpl->tpl_vars['productTotal']->value[$_smarty_tpl->tpl_vars['product']->value['id']];?>
  €</td>
       <td>
         <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /actions/order/add_to_cart.php?action=delete&id=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
 ">
-          <div class="btn-danger">Remove</div>
+          <i class="fas fa-trash" style="color: red"></i>
         </a>
       </td>	
     </tr>

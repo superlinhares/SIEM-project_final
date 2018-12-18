@@ -301,11 +301,11 @@ button.default-button, input[type=submit]{
 }
 
 
-/* Tables default syling */
-table, th, td{
-	border: 1px solid black;
-  	border-collapse: collapse;
-  	font-family: 'Karla', sans-serif;
+/* Tables default styling */
+table, tr{
+	border: 1px solid lightgray;
+  border-collapse: collapse;
+  font-family: 'Karla', sans-serif;
 }
 
 th, td{

@@ -15,7 +15,7 @@
           <p class="dish-name">{$product.name}</p> 
           <a class="dish-img" href="{$BASE_URL}/pages/store/list_product.php?productID={$product.id}"><img src="{$BASE_URL}/{$product.img}" alt="{$product.id}"></a>
           <!--TODO: inserir botão de adicionar ao carrinho-->
-          <form class="dish-order" action="{$BASE_URL}/actions/order/add_to_cart2.php?action=add&id={$product.id}" method="POST">
+          <form class="dish-order" action="{$BASE_URL}/actions/order/add_to_cart.php?action=add&id={$product.id}" method="POST">
             <span class="dish-label price-label">Preço / unidade</span>
             <span class="dish-price">{$product.price} €</span>
             <label class="dish-label quantity-label" for="quantity">Quantidade</label>

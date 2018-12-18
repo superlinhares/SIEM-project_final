@@ -8,5 +8,6 @@
     {include file="shopping_cart/shopping_table/shopping_cart_table.tpl"}
   </div>
 </div>
+
 <!-- Footer -->
 {include file="common/footer.tpl"}
