@@ -1,5 +1,4 @@
 <?php
-
     function createUser($realname, $email, $username, $dob, $password){
         global $conn;
         $stmt = $conn->prepare('INSERT INTO users(real_name, email, username, password, dob, admin) VALUES (?, ?, ?, ?, ?, false)');
@@ -24,5 +23,4 @@
         $row = $stmt->fetch();
         return $row['admin'];
     }
-
 ?>

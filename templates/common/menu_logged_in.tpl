@@ -4,7 +4,12 @@
     <span class="username">{$USERNAME}</span>
 </li>
 <li>
-  <a href="cart.php" class="shopping-cart">
-    <img src="{$BASE_URL}/img/cart.png" class="shopping-cart" alt="shopping-cart">
-  </a>
+  <a href="{$BASE_URL}/pages/shopping_cart/shopping_cart.php" class="shopping-cart">
+    <i class="fas fa-shopping-cart shopping-cart"> [{$cartSize}]</i> 
+  </a>  
 </li>
+<div id="mini-cart-container" style="display:none; position:fixed; width=100%;">
+    <div class="products-container">
+      {include file="shopping_cart/shopping_table/shopping_cart_table.tpl"}
+    </div>
+</div>

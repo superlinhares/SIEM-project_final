@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>A Marmita da Rita</title>
         <link rel="shortcut icon" href="{$BASE_URL}/img/groceries.png">
-	      <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Condensed|" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_reset.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_common.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_pages.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_effects.css">
         <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_popup.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Condensed|" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <!--<link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/styles.css">-->
         
         <!-- jQuery integration -->

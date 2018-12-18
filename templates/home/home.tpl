@@ -17,25 +17,17 @@
 	</section>
 
 	<section id="home-second-section">
-    <div class="first-col">
-			<img src="{$BASE_URL}/img/online.png" alt="Online" class="div-img">
-      <p class="div-p">Encomenda Online</p>    
-    </div>
+    <img src="{$BASE_URL}/img/online.png" alt="Online" class="col-img first-col-img">
+    <span class="first-col-subtitle">Encomenda Online</span>    
 
-    <div class="second-col">
-			<img src="{$BASE_URL}/img/delivery-truck.png" alt="Delivery" class="div-img">
-      <p class="div-p">Entregue em menos de 24h</p>    
-    </div>
+    <img src="{$BASE_URL}/img/delivery-truck.png" alt="Delivery" class="col-img second-col-img">
+    <span class="second-col-subtitle">Entregue em menos de 24h</span>    
 
-    <div class="third-col">
-      <img src="{$BASE_URL}/img/chef.png" alt="Chef" class="div-img">
-      <p class="div-p">Preparado pelos melhores chefs</p>    
-    </div>   
+    <img src="{$BASE_URL}/img/chef.png" alt="Chef" class="col-img third-col-img">
+    <span class="third-col-subtitle">Preparado pelos melhores chefs</span>    
 
-    <div class="forth-col">
-			<img src="{$BASE_URL}/img/microwave-oven.png" alt="Microwave" class="div-img">
-      <p class="div-p">Aquecer e comer - Pronto em menos de 3 minutos</p>		    
-    </div>		
+    <img src="{$BASE_URL}/img/microwave-oven.png" alt="Microwave" class="col-img forth-col-img">
+    <span class="forth-col-subtitle">Aquecer e comer - Pronto em menos de 3 minutos</span>		    
 	</section>
 
 	<section class="social">

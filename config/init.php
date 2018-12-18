@@ -51,6 +51,25 @@ if(isset($_SESSION['admin'])){
     $smarty->assign('ADMIN', $_SESSION['admin']);
 }
 
+/**
+ * Shopping cart 
+ */
+if (isset($_SESSION['shopping_cart'])) {
+  $smarty->assign('SHOPPING_CART', $_SESSION['shopping_cart']);
+}
+$smarty->assign('cartSize', cartSize());
+
+$total = 0;
+$productTotal[] = array();
+if (!empty($_SESSION['shopping_cart'])){
+  foreach ($_SESSION['shopping_cart'] as $product){  
+    $productTotal[$product['id']] = number_format($product['quantity'] * $product['price'], 2);
+    $total = number_format($total + ($product['quantity'] * $product['price']), 2);
+  }
+}
+$smarty->assign('productTotal', $productTotal);
+$smarty->assign('total', $total);  
+
 /*
 * Error handling code
 * Make every page capable of receiving error messages
@@ -68,5 +87,14 @@ if (isset($_SESSION['error_messages'])) {
 if (isset($_SESSION['success_messages'])) {
     $smarty->assign('SUCCESS_MESSAGES', $_SESSION['success_messages']);
     unset($_SESSION['success_messages']);
+}
+
+function cartSize(){
+  if(!isset($_SESSION['shopping_cart'])) return 0;
+  $count = 0;
+  foreach ($_SESSION['shopping_cart'] as $product) {
+    $count += $product['quantity'];
+    return $count;
+  }
 }
 ?>

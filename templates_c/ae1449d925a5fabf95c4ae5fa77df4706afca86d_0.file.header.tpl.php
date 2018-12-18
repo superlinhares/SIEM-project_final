@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-16 16:18:13
+/* Smarty version 3.1.33, created on 2018-12-18 13:43:06
   from 'C:\inetpub\wwwroot\project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c165095476078_39922417',
+  'unifunc' => 'content_5c18cf3ae3dab6_15763675',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae1449d925a5fabf95c4ae5fa77df4706afca86d' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\common\\header.tpl',
-      1 => 1544966281,
+      1 => 1545129417,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c165095476078_39922417 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18cf3ae3dab6_15763675 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -32,7 +32,6 @@ function content_5c165095476078_39922417 (Smarty_Internal_Template $_smarty_tpl)
         <title>A Marmita da Rita</title>
         <link rel="shortcut icon" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /img/groceries.png">
-	      <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Condensed|" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_reset.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
@@ -43,6 +42,8 @@ function content_5c165095476078_39922417 (Smarty_Internal_Template $_smarty_tpl)
 /css/style_effects.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_popup.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Condensed|" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
         <!--<link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/styles.css">-->
         

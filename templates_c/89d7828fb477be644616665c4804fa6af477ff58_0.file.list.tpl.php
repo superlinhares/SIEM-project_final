@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-16 14:00:02
+/* Smarty version 3.1.33, created on 2018-12-18 12:04:47
   from 'C:\inetpub\wwwroot\project_final\templates\products\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c16303226e347_41319614',
+  'unifunc' => 'content_5c18b82f7bd0a9_14393718',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '89d7828fb477be644616665c4804fa6af477ff58' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\products\\list.tpl',
-      1 => 1544933381,
+      1 => 1545123609,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c16303226e347_41319614 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c18b82f7bd0a9_14393718 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -38,7 +38,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 ?>
-        <article class="product-data">
+        <article class="product-container">
           <!-- TODO: Acrescentar as descrições dos produtos-->
           <!--Clicar no produto passa para a pg do produto -->
           <span class="dish-label name-label">Nome do prato</span>
@@ -51,18 +51,20 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 " alt="<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
 "></a>
           <!--TODO: inserir botão de adicionar ao carrinho-->
-          <div class="dish-order">
+          <form class="dish-order" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/actions/order/add_to_cart2.php?action=add&id=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
+" method="POST">
             <span class="dish-label price-label">Preço / unidade</span>
             <span class="dish-price"><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
  €</span>
             <label class="dish-label quantity-label" for="quantity">Quantidade</label>
-            <input type="text" name="quantity" class="order-quantity" value="1">
+            <input type="number" name="quantity" class="order-quantity" value="1" min="1">
             <input type="hidden" name="name" value="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 ">
             <input type="hidden" name="price" value="<?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
 ">
-            <input type="submit" class="dish-add-to-cart" name="add_to_cart" value="Adicionar ao Carrinho">
-          </div>
+            <button type="submit" class="default-button dish-add-to-cart" name="add_to_cart">Adicionar ao Carrinho</button>
+          </form>
         </article>
     <?php
 }

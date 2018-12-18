@@ -8,22 +8,22 @@
   </header>
   <section id='products'>    
     {foreach from=$products item=$product}
-        <article class="product-data">
+        <article class="product-container">
           <!-- TODO: Acrescentar as descrições dos produtos-->
           <!--Clicar no produto passa para a pg do produto -->
           <span class="dish-label name-label">Nome do prato</span>
           <p class="dish-name">{$product.name}</p> 
           <a class="dish-img" href="{$BASE_URL}/pages/store/list_product.php?productID={$product.id}"><img src="{$BASE_URL}/{$product.img}" alt="{$product.id}"></a>
           <!--TODO: inserir botão de adicionar ao carrinho-->
-          <div class="dish-order">
+          <form class="dish-order" action="{$BASE_URL}/actions/order/add_to_cart2.php?action=add&id={$product.id}" method="POST">
             <span class="dish-label price-label">Preço / unidade</span>
             <span class="dish-price">{$product.price} €</span>
             <label class="dish-label quantity-label" for="quantity">Quantidade</label>
-            <input type="text" name="quantity" class="order-quantity" value="1">
+            <input type="number" name="quantity" class="order-quantity" value="1" min="1">
             <input type="hidden" name="name" value="{$product.name}">
             <input type="hidden" name="price" value="{$product.price}">
-            <input type="submit" class="dish-add-to-cart" name="add_to_cart" value="Adicionar ao Carrinho">
-          </div>
+            <button type="submit" class="default-button dish-add-to-cart" name="add_to_cart">Adicionar ao Carrinho</button>
+          </form>
         </article>
     {/foreach}    
   </section>
