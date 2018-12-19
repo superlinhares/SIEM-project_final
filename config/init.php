@@ -56,7 +56,7 @@ if(isset($_SESSION['admin'])){
  */
 if (isset($_SESSION['shopping_cart'])) {
   $smarty->assign('SHOPPING_CART', $_SESSION['shopping_cart']);
-}
+} else $smarty->assign('SHOPPING_CART', array());
 $smarty->assign('cartSize', cartSize());
 
 $total = 0;
@@ -94,7 +94,7 @@ function cartSize(){
   $count = 0;
   foreach ($_SESSION['shopping_cart'] as $product) {
     $count += $product['quantity'];
-    return $count;
   }
+  return $count;
 }
 ?>

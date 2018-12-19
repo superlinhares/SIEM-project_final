@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-18 17:07:59
+/* Smarty version 3.1.33, created on 2018-12-19 18:27:21
   from 'C:\inetpub\wwwroot\project_final\templates\shopping_cart\shopping_table\shopping_cart_table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c18ff3f089863_79694044',
+  'unifunc' => 'content_5c1a635997d762_69201205',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '42f9dcfd7609c71251ea234d840ef43b5e9335fa' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\shopping_cart\\shopping_table\\shopping_cart_table.tpl',
-      1 => 1545142076,
+      1 => 1545231982,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c18ff3f089863_79694044 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1a635997d762_69201205 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table class='store-table'>
   <tr>
     <th>Produto</th>
@@ -41,15 +41,17 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['price'];?>
  €</td>
       <td>
+        <!-- TODO: se  tiver tempo      
         <select name="<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
--quantity" value="<?php echo $_smarty_tpl->tpl_vars['product']->value['quantity'];?>
-">
+-quantity">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select>
+        </select>--> 
+        <?php echo $_smarty_tpl->tpl_vars['product']->value['quantity'];?>
+
       </td>
       <td><?php echo $_smarty_tpl->tpl_vars['productTotal']->value[$_smarty_tpl->tpl_vars['product']->value['id']];?>
  €</td>

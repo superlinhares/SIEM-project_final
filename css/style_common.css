@@ -96,14 +96,20 @@ body{
   color: white;
 }
 
-/* Shopping cart img */
+/* Nav Shopping cart */
 #nav img.shopping-cart{
 	height: 1em;
 }
 
+.mini-cart-container{
+  flex: right;
+}
+
+
 /* Error message styling */
 #messages{
   grid-area: messages;
+  display: none; /* FIXME: */
   width: 100%;
   margin: 0;
 }
@@ -122,13 +128,14 @@ body{
   background-color: #9F9;
   color: #333;
 }
-/*
+
+/* TODO: delete later*/
 #messages .close {
   float: right;
   font-weight: bold;
   text-decoration: none;
   color: #333;
-}*/
+}*
 
 /* End of header styling*/
 
@@ -149,14 +156,12 @@ body{
 
 #footer > .footer-start {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1em 1fr 2em 1fr 1em;
+  grid-template-rows: auto auto;
+  grid-row-gap: 2em;
+  padding: 1em 1em 4em 1em;
   grid-template-areas:
-  ". . ." 
-  ". footer-start-header ."
-  ". . ."
-  ". footer-start-footer ."
-  ". . .";
+  "footer-start-header"
+  "footer-start-footer";
 	background-image: url("../img/mesa.jpg");
 	background-repeat: no-repeat;
   background-size: cover;

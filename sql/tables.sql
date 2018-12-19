@@ -18,8 +18,7 @@ CREATE TABLE products (
 	name VARCHAR(256) NOT NULL,
 	description VARCHAR NOT NULL,
 	price real NOT NULL,
-	stock INTEGER NOT NULL,
-	img VARCHAR(256) NOT NULL	
+	stock INTEGER NOT NULL
 );
 
 /* Orders Table*/

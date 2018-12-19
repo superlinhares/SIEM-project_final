@@ -12,13 +12,15 @@
       <td>{$product.name}</td>
       <td>{$product.price} €</td>
       <td>
-        <select name="{$product.id}-quantity" value="{$product.quantity}">
+        <!-- TODO: se  tiver tempo      
+        <select name="{$product.id}-quantity">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select>
+        </select>--> 
+        {$product.quantity}
       </td>
       <td>{$productTotal[$product.id]} €</td>
       <td>

@@ -1,19 +1,37 @@
-<div class="main-container">
-  <section> 
-    <a href="{$BASE_URL}/pages/account/admin/user_data.php"><div class="single-container admin-user-container"> <!--FIXME: path-->
-      <img src="{$BASE_URL}/img/user.png" class="container-image">
-      <p class="container-title">Gerir contas de utilizador</p>
-      <p class="container-description">Ver, alterar ou apagar contas de utilizador</p>
-    </div></a>				
-    <a href="{$BASE_URL}/pages/account/admin/orders.php"><div class="single-container admin-order-container"> <!--FIXME: path-->
-      <img src="{$BASE_URL}/img/order.png" class="container-image">
-      <p class="container-title">Gerir encomendas</p>
-      <p class="container-description">Ver, confirmar, alterar e eliminar encomendas</p>
-    </div></a>
-      <a href="{$BASE_URL}/pages/account/admin/warehouse/warehouse.php"><div class="single-container admin-warehouse-container">
-      <img src="{$BASE_URL}/img/warehouse.png" class="container-image">
-      <p class="container-title">Armazém</p>
-      <p class="container-description">Ver e gerir armazém</p>
-    </div></a>
-	</section>
-</div>	
+<div id="account-admin-menu-page">
+  <a href="user.data.php"> <!--FIXME: HREF -->
+    <div class="single-container user-container">
+      <img src="../../img/user.png" class="container-img">
+      <h2 class="container-title">Dados da conta</h2>
+      <span class="container-description">Ver ou alterar dados da conta</span>
+    </div>
+  </a>
+  <a href="user.address.php"> <!--FIXME: HREF -->
+    <div class="single-container address-container">
+      <img src="../../img/address.png" class="container-img">
+      <h2 class="container-title">Endereço</h2>
+      <span class="container-description">Confirma ou altera a tua morada de entrega e faturação</span>		  
+    </div>
+  </a>
+  <a href="user.orders.php"> <!--FIXME: HREF -->
+    <div class="single-container order-container">
+      <img src="../../img/order.png" class="container-img">
+      <h2 class="container-title">Encomendas</h2>
+      <span class="container-description">Ver as minhas encomendas</span>
+    </div>
+  </a>
+  <a href="user.password.php"> <!--FIXME: HREF -->
+    <div class="single-container password-container">
+      <img src="../../img/password.png" class="container-img">
+      <h2 class="container-title">Mudar password</h2>
+      <span class="container-description">Alterar a minha password</span>
+    </div>
+  </a>
+  <a href="{$BASE_URL}/pages/account/admin/admin_panel/admin_panel.php">
+    <div class="single-container admin-container">
+      <img src="../../img/admin.png" class="container-img">
+      <h2 class="container-title">Painel de administrador</h2>
+      <span class="container-description">Aceda ao painel de aministrador</span>
+    </div>
+  </a>
+</div>

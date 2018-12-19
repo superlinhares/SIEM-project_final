@@ -9,7 +9,7 @@ if (!$_GET['productID']) {
     exit;
 }    
 
-$product = $_GET['productID'];
+$product = $_GET['productId'];
 $products = getProduct($product);
 
 $smarty->assign('products', $products);
