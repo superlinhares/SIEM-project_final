@@ -38,13 +38,13 @@
   <tr>
     <!-- Show checkout button only if the shopping cart is not empty -->
     <td colspan="5">
-  {if (isset($SHOPPING_CART))} 
-    {if (count($SHOPPING_CART) > 0)}
-        <form action="includes/checkout.inc.php" formmethod="GET">  <!--FIXME: form action --> 
-          <button name="submit" class="checkout">Checkout</button>
-        </form>   
-    {/if}
-  {/if}
+      {if (isset($SHOPPING_CART))} 
+        {if (count($SHOPPING_CART) > 0)}
+          <form action="{$BASE_URL}/actions/order/checkout.php" formmethod="GET">  
+            <button name="submit" class="checkout">Checkout</button>
+          </form>   
+        {/if}
+      {/if}
     </td>
   </tr>		
 </table>

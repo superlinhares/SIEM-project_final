@@ -20,16 +20,7 @@
         $stmt->execute(array($productID));
         return $stmt->fetchAll();
     }
-
-    function gerProductId($productName) {
-      global $conn;
-      $stmt = $conn->prepare('SELECT id
-                              FROM products
-                              WHERE name = ?');
-      $stmt->execute(array($productName));
-      return $stmt->fetch();                              
-    }
-
+    
     function createComment($productID, $username, $comment){
         global $conn;
         $stmt = $conn->prepare("INSERT INTO comments

@@ -10,11 +10,11 @@
         exit;
     }
 
-    $username = $_POST['username'];
+    $userName = $_POST['username'];
     $password = $_POST['password'];
 
-    if (isLoginCorrect($username, $password)) {
-      $_SESSION['username'] = $username;
+    if (isLoginCorrect($userName, $password)) {
+      $_SESSION['username'] = $userName;
       // Verify if user is an admin
       if (isUserAdmin($username))      
         $_SESSION['admin'] = true;    
