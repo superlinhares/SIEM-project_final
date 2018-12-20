@@ -99,7 +99,7 @@ body {
 }
 
 /* Mini cart container*/
-#header > #mini-cart-container {
+#header #mini-cart-container {
   grid-area: mini-cart-container;
   display: none;
   position: absolute;
@@ -110,9 +110,8 @@ body {
 /* Error message styling */
 #messages {
   grid-area: messages;
-  display: none; /* FIXME: */
-  width: 100%;
-  margin: 0;
+  background-color: transparent;
+  display: none; 
 }
 
 #messages div {
