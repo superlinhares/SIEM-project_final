@@ -4,15 +4,18 @@
     global $conn;
     // Order initial state
     $orderState = 'Em processamento';
+    date_default_timezone_set('UTC');
+    $now = date("d-m-Y H:i:s");
     $stmt = $conn->prepare('INSERT INTO orders
-                            VALUES (DEFAULT, time(), ?, ?, ?)');
-    $stmt->execute(array($userName, $userAddress, $orderState));
+                            VALUES (DEFAULT, ?, ?, ?, ?)');
+    $stmt->execute(array($now, $userName, $userAddress, $orderState));
+    return $conn->lastInsertId();
   }
 
-  function insertProductIntoOrder($orderID, $productId, $productQuantity) {
+  function insertProductIntoOrder($orderId, $productId, $productQuantity) {
     global $conn;
-    $stmt = $conn->prepare('INSERT INTO order_products
-                            VALUES (? ? ?)');
-    $stmt->execute(array($orderID, $productId, $productQuantity));
+    $stmt = $conn->prepare("INSERT INTO order_products
+                            VALUES (?, ?, ?)");
+    $stmt->execute(array($orderId, $productId, $productQuantity));
   }
 ?>

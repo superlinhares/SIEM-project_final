@@ -24,7 +24,7 @@ CREATE TABLE products (
 /* Orders Table*/
 CREATE TABLE orders (
 	id SERIAL NOT NULL PRIMARY KEY,
-	order_date date DEFAULT CURRENT_DATE,
+	order_date VARCHAR(50) NOT NULL,
 	username VARCHAR(256) REFERENCES users(username) NOT NULL,
 	address VARCHAR(256) NOT NULL, 
 	state VARCHAR(256) NOT NULL	

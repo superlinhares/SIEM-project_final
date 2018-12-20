@@ -106,7 +106,6 @@ body {
   justify-self: right;
 }
 
-
 /* Error message styling */
 #messages {
   grid-area: messages;
@@ -135,7 +134,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: #333;
-}*
+}
 
 /* End of header styling*/
 

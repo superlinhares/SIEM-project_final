@@ -31,7 +31,7 @@
                               WHERE username = ?");
       $stmt->execute(array($userName));
       $row = $stmt->fetch();
-      //if ($row['address'] == NULL) return 0;
+      if ($row['address'] == NULL) return 0;
       return $row['address'];
     }
 ?>

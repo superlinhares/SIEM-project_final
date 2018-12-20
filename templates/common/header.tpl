@@ -50,7 +50,7 @@
         <section id="messages">
           {if (isset($ERROR_MESSAGES))}
             {foreach $ERROR_MESSAGES as $error}
-              <div class="error">{$error} <a class="close" href="#">&#215;</a></div> <!--TODO: delete close later -->                        
+              <div class="error">{$error} <!--<a class="close" href="#">&#215;</a>--></div> <!--TODO: delete close later -->                        
             {/foreach}
           {/if}
 
