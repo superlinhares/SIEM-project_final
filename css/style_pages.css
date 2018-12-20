@@ -8,25 +8,21 @@
   "second-section";
 }
 
-#home-first-section{
+#home-first-section {
   grid-area: first-section;  
-  min-height: 40em;  
   background-image: url("../img/index_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 7em auto auto auto 2em;
-  grid-template-rows: 5em auto 0.5em auto 0.5em auto 1em auto 5em;
+  padding: 7em 0em 7em 7em;
+  grid-template-columns: auto;
+  grid-row-gap: 4em;
+  grid-template-rows: auto auto auto auto;
   grid-template-areas: 
-  ". . . . ."
-  ". first-p . . ."
-  ". . . . ."
-  ". small-container . . ."
-  ". . . . ."
-  ". second-p . . ."
-  ". . . . ."
-  ". order-button . . ."
-  ". . . . .";    
+  "first-p"
+  "small-container"
+  "second-p"
+  "order-button";
 }
 
 .first-p {
@@ -51,7 +47,7 @@
 	font-family: Karla;
 }
 
-p.second-p{
+p.second-p {
   grid-area: second-p;
 	font-size: 2em;
 	color: white;
@@ -59,11 +55,11 @@ p.second-p{
 	font-weight: bold;
 }
 
-.order-button{
+.order-button {
   grid-area: order-button;
 }
 
-.order-button > button{
+.order-button > button {
 	width: 7em;
 	font-size: 2em;
 	border-radius: 6px;
@@ -79,7 +75,7 @@ p.second-p{
 	padding: 10px;
 }
 
-#home-second-section{
+#home-second-section {
   grid-area: second-section;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

@@ -13,19 +13,17 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // TODO: change later to successful messages
     if (isLoginCorrect($username, $password)) {
-        $_SESSION['username'] = $username;
-        // Verify if user is an admin
-        if (isUserAdmin($username)){
-            $_SESSION['admin'] = true;    
-        }
-        else {
-            $_SESSION['admin'] = false;
-        }        
-        $_SESSION['success_messages'][] = 'Login successful';
-    } else {
+      $_SESSION['username'] = $username;
+      // Verify if user is an admin
+      if (isUserAdmin($username))      
+        $_SESSION['admin'] = true;    
+      else 
+        $_SESSION['admin'] = false;
+      $_SESSION['success_messages'][] = 'Login successful';
+    } else 
         $_SESSION['error_messages'][] = 'Login failed';
-    }
-    header('Location: ' . $_SERVER['HTTP_REFERER']); 
+    
+    if (isset($_SERVER['HTTP_REFERER'])) header('Location: ' . $_SERVER['HTTP_REFERER']); 
+    else header('Location: ' . $BASE_URL);
 ?>

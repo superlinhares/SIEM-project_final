@@ -4,50 +4,47 @@ Authors: Pedro Oliveira and Gonçalo Lemos
 */
 
 /* Font */
-@font-face{
+@font-face {
 	src: url(../fonts/Borealis.ttf);
 	font-family: borealis;
 }
 
-html{
+html {
   background-color: white;
 }
 
-body{
+body {
   margin: 0;
   height: 100%;
   font-family: 'Karla', sans-serif;
 }
 
-#container{
+#container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto 5em auto auto;
+  grid-template-rows: auto 4em auto auto;
   grid-template-areas: 
   "header header header"
-  ". . . "
+  ". . ."
   "content content content"
   "footer footer footer";
-
 }
 
 /* Header styling */
-#header{
+#header {
   position: fixed;
   z-index: 1; 
   top: 0; 
   width: 100%;
-  height: 5em; 
   grid-area: header;
   background-color: #83BB66;
+  padding: 5px;
   display: grid;  
-  grid-template-columns: 5px 50% auto 5px;
-  grid-template-rows: 5px auto auto 5px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
-  ". . . ." 
-  ". logo nav ."
-  ". messages messages ."
-  ". . . .";  
+  "logo nav"
+  "messages messages";
 }
 
 /* Logo styling */

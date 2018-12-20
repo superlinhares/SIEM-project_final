@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-19 15:51:04
+/* Smarty version 3.1.33, created on 2018-12-20 11:44:35
   from 'C:\inetpub\wwwroot\project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1a3eb8d49112_20372111',
+  'unifunc' => 'content_5c1b5673498f37_71463003',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ae1449d925a5fabf95c4ae5fa77df4706afca86d' => 
     array (
       0 => 'C:\\inetpub\\wwwroot\\project_final\\templates\\common\\header.tpl',
-      1 => 1545223454,
+      1 => 1545293754,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/menu_logged_out.tpl' => 1,
   ),
 ),false)) {
-function content_5c1a3eb8d49112_20372111 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c1b5673498f37_71463003 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
   <head>
