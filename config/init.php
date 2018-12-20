@@ -9,7 +9,7 @@
 session_start();
 
 $BASE_DIR = dirname(__DIR__);
-$BASE_URL = 'http://localhost/project_final';
+$BASE_URL = 'http://localhost:81/siem_project_final';
 
 include_once($BASE_DIR . '/lib/smarty/libs/Smarty.class.php');
 

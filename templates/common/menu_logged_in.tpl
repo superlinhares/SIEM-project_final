@@ -8,8 +8,4 @@
     <i class="fas fa-shopping-cart shopping-cart"> [{$cartSize}]</i> 
   </a>  
 </li>
-<div id="mini-cart-container" style="display:none; position:fixed; width=100%;">
-  <div class="products-container">
-    {include file="shopping_cart/shopping_table/shopping_cart_table.tpl"}
-  </div>
-</div>
+
