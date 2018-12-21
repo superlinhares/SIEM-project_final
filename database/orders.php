@@ -1,6 +1,6 @@
 <?php 
 
-  function createOrder($userName, $userAddress) {
+  function createOrder($username, $userAddress) {
     global $conn;
     // Order initial state
     $orderState = 'Em processamento';
@@ -8,7 +8,7 @@
     $now = date("d-m-Y H:i:s");
     $stmt = $conn->prepare('INSERT INTO orders
                             VALUES (DEFAULT, ?, ?, ?, ?)');
-    $stmt->execute(array($now, $userName, $userAddress, $orderState));
+    $stmt->execute(array($now, $username, $userAddress, $orderState));
     return $conn->lastInsertId();
   }
 

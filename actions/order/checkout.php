@@ -5,9 +5,9 @@
 
   /* Verify if form submit button was used */
   if (isset($_GET['submit'])) {
-    $userName = $_SESSION['username'];
+    $username = $_SESSION['username'];
     try {
-      $userAddress = getUserAddress($userName);
+      $userAddress = getUserAddress($username);
     } catch (PDOException $e) {
       $_SESSION['error_messages'][] = 'Ocorreu um erro:' . $e->getMessage();
       header('Location: ' . $_SERVER['HTTP_REFERER']);
@@ -22,7 +22,7 @@
     if (!empty($_SESSION['shopping_cart'])) {
       // Create new order
       try {
-        $orderId = createOrder($userName, $userAddress);        
+        $orderId = createOrder($username, $userAddress);        
       } catch (PDOException $e) {
         $_SESSION['error_messages'][] = 'Ocorreu um erro ao criar a encomenda:' . $e->getMessage();
         header('Location: ' . $_SERVER['HTTP_REFERER']);

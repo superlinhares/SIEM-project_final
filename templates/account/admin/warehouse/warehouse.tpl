@@ -3,6 +3,7 @@
 
 <!-- Main -->			
 <div id="warehouse-page">
+  <h1 class="page-title">Armazém</h1>
   <table class="warehouse-table">
     <tr>
       <th>ID</th>
