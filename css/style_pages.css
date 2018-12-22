@@ -142,7 +142,7 @@ p.second-p {
   "products";
 }
 
-#store > header.store-header{
+#store > header.store-header {
   grid-area: store-header;
   background-image: url("../img/healthy-food-2.jpg");
 	background-repeat: no-repeat;
@@ -155,7 +155,7 @@ p.second-p {
   ".";  
 }
 
-#store > header.store-header > h1.page-title{
+#store > header.store-header > h1.page-title {
   grid-area: page-title;
   justify-self: center;
   color: white;
@@ -173,7 +173,7 @@ p.second-p {
   grid-gap: 2em;
 }
 
-.product-container{
+.product-container {
   width: 22em; 
   display: grid;
   justify-self: center;
@@ -261,7 +261,7 @@ p.second-p {
   ". page-title ."
   ". shopping-table .";
 }
-.page-title{
+.page-title {
   grid-area: page-title;
 }
 
@@ -269,7 +269,7 @@ p.second-p {
   grid-area: shopping-table;
 }
 
-button.checkout{
+button.checkout {
 	width: 6em;
 	margin: auto;
 	font-size: 14pt;
