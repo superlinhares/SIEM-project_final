@@ -36,8 +36,13 @@
             {if isset($USERNAME)}
                 {include file="common/menu_logged_in.tpl"}
             {else}
-                {include file="common/menu_logged_out.tpl"}
+                {include file="common/logged_out/menu_logged_out.tpl"}
             {/if}
+            <li>
+              <a href="{$BASE_URL}/pages/shopping_cart/shopping_cart.php" class="shopping-cart">
+                <i class="fas fa-shopping-cart shopping-cart"> [{$cartSize}]</i> 
+              </a>  
+            </li>
           </ul>
         </nav>
         <div id="mini-cart-container">

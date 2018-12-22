@@ -1,27 +1,27 @@
-/* LOGIN / SIGNUP POPUP's */
+/* LOGIN / SIGN UP POPUP's */
 
 /* Full-width input fields */
-#modal-wrapper input[type=text], #modal-wrapper  input[type=password], #modal-wrapper  input[type=date] {
+.modal-wrapper input[type=text], .modal-wrapper  input[type=password], .modal-wrapper  input[type=date] {
   width: 90%;
 	padding: 12px 20px;
 	height: 1em;
   margin: 8px 26px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid ccc;
   box-sizing: border-box;
-	font-size:16px;
+	font-size: 16px;
 }
 
-#modal-wrapper h1{
+.modal-wrapper h1{
 	font-size: 2em;
 }
 
-#modal-wrapper label{
+.modal-wrapper label{
 	margin: 1em;
 }
 
 /* Set a style for all buttons */
-#modal-wrapper button {
+.modal-wrapper button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -31,17 +31,17 @@
   width: 90%;
 	font-size:20px;
 }
-#modal-wrapper button:hover {
+.modal-wrapper button:hover {
     opacity: 0.8;
 }
 
 /* Center the image and position the close button */
-#modal-wrapper .imgcontainer {
+.modal-wrapper .imgcontainer {
   text-align: center;
   margin: 24px 0 12px 0;
   position: relative;
 }
-#modal-wrapper .avatar {
+.modal-wrapper .avatar {
   width: 200px;
 	height:200px;
   border-radius: 50%;
