@@ -8,7 +8,7 @@
         <h1>Vamos Começar!</h1>
       </header>
 			<footer class="footer-start-footer">
-        <a href="store.php"><button class="default-button">Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
+        <a href="{$BASE_URL}/pages/store/list_all.php"><button class="default-button">Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
       </footer>
 		</section>
 
@@ -20,10 +20,10 @@
 			<nav class="footer-center">
         <h1><a class="link-header" href="index.php">A Marmita da Rita</a></h1>
         <ul class="link-info">
-          <li><a href="about.php">Sobre</a></li>
-          <li><a href="store.php">Loja</a></li>
-          <li><a href="contact.php">Contactos</a></li>
-          <li><a href="faq.php">FAQ</a></li>        
+          <li><a href="{$BASE_URL}/pages/about/about.php">Sobre</a></li>
+          <li><a href="{$BASE_URL}/pages/store/store.php">Loja</a></li>
+          <li><a href="{$BASE_URL}/pages/contacts/contacts.php">Contactos</a></li>
+          <li><a href="{$BASE_URL}/pages/faq/faq.php">FAQ</a></li>        
         </ul>	
 			</nav>
 

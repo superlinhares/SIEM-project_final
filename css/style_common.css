@@ -123,15 +123,6 @@ body {
   background-color: #9F9;
   color: #333;
 }
-
-/* TODO: delete later*/
-#messages .close {
-  float: right;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
 /* End of header styling*/
 
 /* Content styling */

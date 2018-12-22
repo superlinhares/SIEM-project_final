@@ -1,4 +1,3 @@
-/* Create */
 /* Users Table */
 CREATE TABLE users (
 	id SERIAL NOT NULL PRIMARY KEY,
@@ -16,7 +15,7 @@ CREATE TABLE users (
 CREATE TABLE category (
   id SERIAL NOT NULL PRIMARY KEY,
   name VARCHAR NOT NULL
-)
+);
 
 /* Product Table */
 CREATE TABLE products (
@@ -37,7 +36,7 @@ CREATE TABLE orders (
 	state VARCHAR NOT NULL	
 );
 
-/* Invoice Product*/
+/* Order line*/
 CREATE TABLE order_line (
 	order_id INTEGER REFERENCES orders NOT NULL,
 	product_id INTEGER REFERENCES products NOT NULL,	
@@ -65,16 +64,16 @@ CREATE TABLE address (
 
 
 INSERT INTO users (id, real_name, email, username, password, address, dob, tel, admin) 
-VALUES (DEFAULT, 'admin@gmail.com', 'admin', 'password', 'Rua do admin, nº1, Curral de Moinas', '+351912223344', 'TRUE');
+VALUES (DEFAULT, 'admin', 'admin@gmail.com', 'admin', 'password', 'Rua do admin, nº1, Curral de Moinas', '1994-01-01', '+351912223344', 'TRUE');
 
 INSERT INTO users (id, real_name, email, username, password, address, dob, tel, admin) 
-VALUES (DEFAULT, 'user@gmail.com', 'user', 'password', 'Rua do user, nº2, Curral de Moinas', '+351913334455', 'FALSE');
+VALUES (DEFAULT, 'user', 'user@gmail.com', 'user', 'password', 'Rua do user, nº2, Curral de Moinas', '1994-01-01', '+351913334455', 'FALSE');
 
 INSERT INTO category (id, name)
-VALUES (DEFAULT, Pratos de carne);
+VALUES (DEFAULT, 'Pratos de carne');
 
 INSERT INTO category (id, name)
-VALUES (DEFAULT, Pratos de peixe);
+VALUES (DEFAULT, 'Pratos de peixe');
 
 INSERT INTO products (id, name, description, price, cat_id, stock) 
 VALUES (DEFAULT, 'Tiras de frango com cenas', 'Ótimas tiras de frango com cenas!', '5', '1', '100');
