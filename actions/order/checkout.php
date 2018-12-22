@@ -34,7 +34,7 @@
   if (!empty($_SESSION['shopping_cart'])) {
     // Create new order
     try {
-      $orderId = createOrder($username, $userAddress);        
+      $orderId = insertOrder($username, $userAddress);        
     } catch (PDOException $e) {
       $_SESSION['error_messages'][] = 'Ocorreu um erro ao criar a encomenda:' . $e->getMessage();
       header('Location: ' . $_SERVER['HTTP_REFERER']);
@@ -43,7 +43,7 @@
 
     foreach ($_SESSION['shopping_cart'] as $key => $product) {  
       try {          
-        insertProductIntoOrder($orderId, $product['id'], $product['quantity']);
+        insertOrderLine($orderId, $product['id'], $product['quantity']);
       } catch (PDOException $e) {
         $_SESSION['error_messages'][] = 'Ocorreu um erro ao adicionar o produto à encomenda';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
