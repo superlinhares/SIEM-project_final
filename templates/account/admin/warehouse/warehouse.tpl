@@ -42,9 +42,9 @@
         </tr>									
       </table>
       <div class="admin-buttons">
-        <button type="submit" name="add" formaction="{$BASE_URL}/actions/warehouse/add_to_warehouse.php">Adicionar</button>
-        <button type="submit" name="change" formaction="includes/update_warehouse.inc.php">Alterar</button>
-        <button type="submit" name="delete" formaction="includes/delete_from_warehouse.inc.php">Eliminar</button>
+        <button type="submit" name="add" formaction="{$BASE_URL}/actions/admin/warehouse/add_to_warehouse.php">Adicionar</button>
+        <button type="submit" name="change" formaction="{$BASE_URL}/actions/admin/warehouse/update_warehouse.php">Alterar</button>
+        <button type="submit" name="delete" formaction="{$BASE_URL}/actions/admin/warehouse/delete_from_warehouse.php">Eliminar</button>
       </div>	
     </form>							
   </div>

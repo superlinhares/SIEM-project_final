@@ -1,7 +1,7 @@
 <?php 
-  include_once('../../config/init.php');
-  include_once('../../database/warehouse.php');
-  include_once('../../database/products.php');
+  include_once('../../../config/init.php');
+  include_once('../../../database/warehouse.php');
+  include_once('../../../database/products.php');
 
   /* Verify if form submit button was used */
 	if (isset($_POST['add'])) {

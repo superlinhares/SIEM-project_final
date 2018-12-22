@@ -14,7 +14,7 @@ function initMessageOpeners() {
 }
 
 function initMessageClosers() {
-  $('#messages').delay(5000).fadeOut(1000);
+  $('#messages').delay(3000).fadeOut(1000);
 }
 
 function initMessageClosersOnClick() {

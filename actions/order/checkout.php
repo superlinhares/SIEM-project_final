@@ -9,10 +9,11 @@
     try {
       $userAddress = getUserAddress($username);
     } catch (PDOException $e) {
-      $_SESSION['error_messages'][] = 'Ocorreu um erro:' . $e->getMessage();
+      $_SESSION['error_messages'][] = 'Ocorreu um erro ao processar o pedido';
       header('Location: ' . $_SERVER['HTTP_REFERER']);
       exit;      
     }
+    /* User address not defined yet */
     if ($userAddress === 0) {
       $_SESSION['error_messages'][] = 'Primeiro tens que definir o teu endereço na conta.';
       header('Location: ' . $_SERVER['HTTP_REFERER']);
@@ -33,7 +34,7 @@
         try {          
           insertProductIntoOrder($orderId, $product['id'], $product['quantity']);
         } catch (PDOException $e) {
-          $_SESSION['error_messages'][] = 'Ocorreu um erro ao adicionar o produto à encomenda:' . $e->getMessage();
+          $_SESSION['error_messages'][] = 'Ocorreu um erro ao adicionar o produto à encomenda';
           header('Location: ' . $_SERVER['HTTP_REFERER']);
         } 
       }
