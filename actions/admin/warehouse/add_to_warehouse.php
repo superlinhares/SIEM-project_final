@@ -1,7 +1,7 @@
 <?php 
   include_once('../../../config/init.php');
   include_once('../../../database/warehouse.php');
-  include_once('../../../database/products.php');
+  include_once('../../../database/.php');
 
   /* Verify if form submit button was used */
 	if (isset($_POST['add'])) {
@@ -30,8 +30,8 @@
           try {
             addProduct($productName, $productDescription, $productPrice, $productStock);
             $productId = $conn->lastInsertId();
-            move_uploaded_file($productImg["tmp_name"], $BASE_DIR . "/img/products/" . $productId . '.' . $extension);
-            chmod($BASE_DIR . '/img/products/' . $productId . '.' . $extension, 0644);
+            move_uploaded_file($productImg["tmp_name"], $BASE_DIR . "/img//" . $productId . '.' . $extension);
+            chmod($BASE_DIR . '/img//' . $productId . '.' . $extension, 0644);
           } catch (PDOException $e) {
             die($e->getMessage());
             $_SESSION['error_messages'][] = 'Ocorreu um erro a adicionar o produto' . $e->getMessage();

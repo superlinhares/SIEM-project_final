@@ -1,6 +1,6 @@
 <!-- SIGNUP POP-UP -->
 <div id="sign-up-modal-wrapper" class="modal-wrapper modal">  
-  <form class="modal-content animate" action="{$BASE_URL}/actions/users/register.php" method="POST">          
+  <form class="modal-content animate" action="{$BASE_URL}/actions/user/register.php" method="POST">          
     <div class="imgcontainer">
       <span class="close-pop close-sign-up" title="Close PopUp">&times;</span>
       <img src="{$BASE_URL}/img/avatar.png" alt="Avatar" class="avatar">

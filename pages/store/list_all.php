@@ -1,14 +1,11 @@
 <?php
-/* This page lists all
-* the products (store)
-*/
 
 include_once ('../../config/init.php');
-include_once ($BASE_DIR . '/database/products.php');
+include_once ($BASE_DIR . '/database/product.php');
 
 $products = getAllProducts();
 $smarty->assign('products', $products);
-$smarty->display('products/list.tpl');
+$smarty->display('product/list.tpl');
 
 ?>
 

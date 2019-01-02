@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-21 16:55:37
+/* Smarty version 3.1.33, created on 2019-01-02 11:15:54
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\logged_out\sign_up_popup.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1d8b89d8ca50_47435249',
+  'unifunc' => 'content_5c2d0dea4a8680_30735839',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '30e31a5fa2755f4a448f80b3c97a63bff06c9cc5' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\logged_out\\sign_up_popup.tpl',
-      1 => 1545440128,
+      1 => 1546456039,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1d8b89d8ca50_47435249 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d0dea4a8680_30735839 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- SIGNUP POP-UP -->
 <div id="sign-up-modal-wrapper" class="modal-wrapper modal">  
   <form class="modal-content animate" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/actions/users/register.php" method="POST">          
+/actions/user/register.php" method="POST">          
     <div class="imgcontainer">
       <span class="close-pop close-sign-up" title="Close PopUp">&times;</span>
       <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>

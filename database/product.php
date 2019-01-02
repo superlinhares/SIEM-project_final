@@ -1,30 +1,30 @@
 <?php
     /**
      * This page is responsible for all
-     * queries related to products
+     * queries related to 
      */
     
     function getAllProducts(){
         global $conn;
         $stmt = $conn->prepare('SELECT *
-                                FROM products');
+                                FROM product');
         $stmt->execute();
         return $stmt->fetchAll();
     }
 
-    function getProduct($productID){
+    function getProduct($productId){
         global $conn;
         $stmt = $conn->prepare('SELECT *
-                                FROM products 
+                                FROM product
                                 WHERE id = ?');
-        $stmt->execute(array($productID));
+        $stmt->execute(array($productId));
         return $stmt->fetchAll();
     }
     
-    function createComment($productID, $username, $comment){
+    function createComment($productId, $username, $comment){
         global $conn;
-        $stmt = $conn->prepare("INSERT INTO comments
+        $stmt = $conn->prepare("INSERT INTO comment
                                 VALUES (DEFAULT, CURRENT_TIMESTAMP, ?, ?, ?)");
-        $stmt->execute(array($productID, $username, $comment));
+        $stmt->execute(array($productId, $username, $comment));
     }
 ?>

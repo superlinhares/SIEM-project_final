@@ -73,7 +73,7 @@ Merging the code into a single compile template has some drawbacks.
 4. Any change of the template directory structure between calls was not necessarily seen.
 
 Starting with 3.1.15 some of the above conditions got checked and resulted in an exception. It turned out
-that a couple of users did use some of above and now got exceptions.
+that a couple of user did use some of above and now got exceptions.
 
 To resolve this starting with 3.1.16 there is a new configuration parameter $inheritance_merge_compiled_includes.
 For most backward compatibility its default setting is true.

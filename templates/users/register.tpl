@@ -1,6 +1,6 @@
 {include file="common/header.tpl"}
 
-<form action="{$BASE_URL}actions/users/register.php" method="post">
+<form action="{$BASE_URL}actions/user/register.php" method="post">
   <input type="text" name="realname"
          value="{if isset($FORM_VALUES)}{$FORM_VALUES.realname}{/if}"
          placeholder="Name">

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-20 09:02:13
+/* Smarty version 3.1.33, created on 2019-01-02 11:15:54
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\shopping_cart\shopping_table\shopping_cart_table.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1bcb15139ad6_92593973',
+  'unifunc' => 'content_5c2d0dea4c93f5_12801445',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ac6b2c39d3d1c254f2805868096ff23b9106d708' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\shopping_cart\\shopping_table\\shopping_cart_table.tpl',
-      1 => 1545308118,
+      1 => 1546455200,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1bcb15139ad6_92593973 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d0dea4c93f5_12801445 (Smarty_Internal_Template $_smarty_tpl) {
 ?><table class='store-table'>
   <tr>
     <th>Produto</th>

@@ -1,11 +1,11 @@
 <?php 
 
 include_once('../../../../config/init.php');
-include_once ($BASE_DIR . '/database/products.php');
+include_once ($BASE_DIR . '/database/.php');
 
 if (isset($_SESSION['admin'])) {
-  $products = getAllProducts();
-  $smarty->assign('products', $products);
+  $ = getAllProducts();
+  $smarty->assign('', $);
   $smarty->display('account/admin/warehouse/warehouse.tpl');
 }
 else {

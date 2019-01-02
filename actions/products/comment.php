@@ -1,6 +1,6 @@
 <?php 
     include_once('../../config/init.php');
-    include_once($BASE_DIR . 'database/products.php');
+    include_once($BASE_DIR . 'database/.php');
 
     // Verify if the user is logged in
     if (!$_POST['username']) {

@@ -13,7 +13,7 @@
       <span class="container-description">Confirma ou altera a tua morada de entrega e faturação</span>		  
     </div>
   </a>
-  <a href="user.orders.php"> <!--FIXME: HREF -->
+  <a href="user.order.php"> <!--FIXME: HREF -->
     <div class="single-container order-container">
       <img src="../../img/order.png" class="container-img">
       <h2 class="container-title">Encomendas</h2>

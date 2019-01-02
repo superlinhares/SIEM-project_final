@@ -1,6 +1,6 @@
 <?php 
 include_once ('../../config/init.php');
-include_once ($BASE_DIR . '/database/products.php');
+include_once ($BASE_DIR . '/database/.php');
 
 // Redirect to home page and display error message
 if (!$_GET['productID']) {
@@ -10,9 +10,9 @@ if (!$_GET['productID']) {
 }    
 
 $product = $_GET['productId'];
-$products = getProduct($product);
+$ = getProduct($product);
 
-$smarty->assign('products', $products);
-$smarty->display('products/list.tpl');
+$smarty->assign('', $);
+$smarty->display('/list.tpl');
 
 ?>

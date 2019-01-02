@@ -1,7 +1,7 @@
 <?php
   require_once('../../config/init.php');
-  include_once($BASE_DIR . '/database/users.php');
-  include_once($BASE_DIR . '/database/orders.php');
+  include_once($BASE_DIR . '/database/user.php');
+  include_once($BASE_DIR . '/database/order.php');
 
   /* Verify if form submit button was used */
   if (!isset($_GET['submit'])){
