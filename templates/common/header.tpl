@@ -29,7 +29,7 @@
           <ul>	
             <!-- TODO: Fazer isto compatível com a nova estrutura -->						          
             <li><a href="{$BASE_URL}/pages/about/about.php">Sobre</a></li>
-            <li><a href="{$BASE_URL}/pages/store/list_all.php">Loja</a></li>
+            <li><a href="{$BASE_URL}/pages/store/list_categories.php">Loja</a></li>
             <li><a href="{$BASE_URL}/pages/contacts/contacts.php">Contactos</a></li>
             <li><a href="{$BASE_URL}/pages/faq/faq.php">FAQ</a></li>
             <!-- Select wich menu to show -->

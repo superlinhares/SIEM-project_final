@@ -64,5 +64,5 @@
 	 * Go back to the page
 	 */
 	if (isset($_SERVER['HTTP_REFERER'])) header('Location: ' . $_SERVER['HTTP_REFERER']); 
-	else header('Location: ' . $BASE_URL . '/pages/store/list_all.php');
+	else header('Location: ' . $BASE_URL . '/pages/store/list_products.php');
 ?>

@@ -11,7 +11,7 @@
     /* Verify if user is logged in */
      if (!isset($_SESSION['username'])) {
       $_SESSION['error_messages'][] = 'Para fazeres encomendas primeiro tens que entrar na tua conta.';
-      header('Location: ' . $BASE_URL . '/pages/store/list_all.php');
+      header('Location: ' . $BASE_URL . '/pages/store/list_products.php');
       exit;
      }
   }

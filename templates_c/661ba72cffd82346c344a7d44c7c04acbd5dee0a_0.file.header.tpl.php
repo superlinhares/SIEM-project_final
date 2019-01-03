@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-21 16:19:57
+/* Smarty version 3.1.33, created on 2019-01-02 15:08:00
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1d832d2d6922_19410430',
+  'unifunc' => 'content_5c2d4450a75f71_82920280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '661ba72cffd82346c344a7d44c7c04acbd5dee0a' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\header.tpl',
-      1 => 1545437648,
+      1 => 1546470472,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:shopping_cart/shopping_table/shopping_cart_table.tpl' => 1,
   ),
 ),false)) {
-function content_5c1d832d2d6922_19410430 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c2d4450a75f71_82920280 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -70,7 +70,7 @@ function content_5c1d832d2d6922_19410430 (Smarty_Internal_Template $_smarty_tpl)
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/about/about.php">Sobre</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/store/list_all.php">Loja</a></li>
+/pages/store/list_categories.php">Loja</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/contacts/contacts.php">Contactos</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>

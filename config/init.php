@@ -19,7 +19,7 @@ $smarty->assign('BASE_URL', $BASE_URL);
 
 /*
 * Smarty assumes that our templates folder is at the same level as the PHP page we are executing. 
-* As our list_all.php page is two levels down the folder structure, we have to add two more lines 
+* As our list_products.php page is two levels down the folder structure, we have to add two more lines 
 * to our config/init.php file, right after instantiating Smarty:
 */
 $smarty->template_dir = $BASE_DIR . '/templates';
