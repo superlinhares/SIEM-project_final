@@ -8,10 +8,12 @@
   </header>
   <section id='categories'>    
     {foreach from=$categories item=$category}
-      <article class="category-container">
+    <a href="{$BASE_URL}/pages/store/list_products.php?category_id={$category.id}">
+      <div class="category-container">
         <!--Clicar na categoria passa para a pg do produto -->     
-        <a class="category" href="{$BASE_URL}/pages/store/list_products.php?category_id={$category.id}">{$category.name}</a>
-      </article>
+        <h1>{$category.name}</h1>
+      </div>
+    </a>
     {/foreach}    
   </section>
 </div>

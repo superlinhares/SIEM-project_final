@@ -135,10 +135,11 @@ p.second-p {
 /* Store page */
 #store {
   display: grid;  
-  grid-template-rows: 20em auto;
+  grid-template-rows: 20em auto auto;
   grid-row-gap: 2em;
   grid-template-areas: 
   "store-header"
+  "categories"
   "products";
 }
 
@@ -162,6 +163,30 @@ p.second-p {
   font-family: borealis;
   font-size: 4em;
   font-weight: bold;
+}
+
+#categories {
+  margin: 2em;
+  justify-self: center;
+  grid-area: categories;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 4em;
+}
+
+#categories a {
+  text-decoration: none;
+}
+
+#categories h1 {
+  color: white;
+  text-align: center;
+}
+
+.category-container {
+  padding: 2em;
+  background-color: #83BB66;
 }
 
 #products {
