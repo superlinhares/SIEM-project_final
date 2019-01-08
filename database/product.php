@@ -27,7 +27,7 @@
                             FROM product
                             WHERE cat_id = ?
                             ORDER BY id DESC');
-    $stmt->execute(array($categoryId)); // TODO: perceber isto
+    $stmt->execute(array($categoryId)); 
     return $stmt->fetchALL();                          
   }
 

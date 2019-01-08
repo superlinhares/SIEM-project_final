@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-08 08:32:24
+/* Smarty version 3.1.33, created on 2019-01-08 11:09:48
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\admin\warehouse\warehouse.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c34d09874f019_27946322',
+  'unifunc' => 'content_5c34f57cd85fa2_46970619',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8458e90925d479e8aff69d0cae0090f16eba06c6' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\admin\\warehouse\\warehouse.tpl',
-      1 => 1546965053,
+      1 => 1546974534,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c34d09874f019_27946322 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c34f57cd85fa2_46970619 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -34,6 +34,7 @@ function content_5c34d09874f019_27946322 (Smarty_Internal_Template $_smarty_tpl)
     <tr>
       <th>ID</th>
       <th>Nome</th>
+      <th>Categoria</th>
       <th>Descrição</th>
       <th>Preço/unidade (€)</th>
       <th>Stock</th>								
@@ -47,6 +48,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
 </td>
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
+</td>
+      <td><?php echo $_smarty_tpl->tpl_vars['categories']->value[$_smarty_tpl->tpl_vars['product']->value['cat_id']-1]['name'];?>
 </td>
       <td><?php echo $_smarty_tpl->tpl_vars['product']->value['description'];?>
 </td>
@@ -66,6 +69,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
       <table>
         <th>ID</th>
         <th>Nome</th>
+        <th>Categoria</th>
         <th>Descrição</th>
         <th>Imagem</th>
         <th>Preço/unidade (€)</th>
@@ -73,6 +77,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <tr>
           <td><input type="text" name="product-id"></td>
           <td><input type="text" name="product-name"></td>
+          <td><input type="text" name="product-category"></td>
           <td><input type="text" name="product-description"></td>
           <td><input type="file" name="product-img"></td>
           <td><input type="text" name="product-price"></td>

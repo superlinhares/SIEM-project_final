@@ -15,4 +15,20 @@
     $stmt->execute(array($categoryId));
     return $stmt->fetch();
   }
+
+  function createCategory($categoryName) {
+    global $conn;
+    $stmt = $conn->prepare('INSERT INTO category
+                            VALUES (DEFAULT, ?)');
+    $stmt->execute(array($categoryName));
+  }
+
+  function getCategoryIdOrCreate($categoryName){
+    global $conn;
+    $categories = getAllCategories();
+    foreach ($categories as $category) {
+      if ($category['name'] === $categoryName) return $category['id'];
+    }
+    return getCategoryId(createCategory($categoryName));
+  }
 ?>

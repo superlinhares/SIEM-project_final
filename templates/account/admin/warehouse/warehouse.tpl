@@ -8,6 +8,7 @@
     <tr>
       <th>ID</th>
       <th>Nome</th>
+      <th>Categoria</th>
       <th>Descrição</th>
       <th>Preço/unidade (€)</th>
       <th>Stock</th>								
@@ -16,6 +17,7 @@
     <tr> 
       <td>{$product.id}</td>
       <td>{$product.name}</td>
+      <td>{$categories[$product.cat_id-1].name}</td>
       <td>{$product.description}</td>
       <td>{$product.price}</td>
       <td>{$product.stock}</td>
@@ -28,6 +30,7 @@
       <table>
         <th>ID</th>
         <th>Nome</th>
+        <th>Categoria</th>
         <th>Descrição</th>
         <th>Imagem</th>
         <th>Preço/unidade (€)</th>
@@ -35,6 +38,7 @@
         <tr>
           <td><input type="text" name="product-id"></td>
           <td><input type="text" name="product-name"></td>
+          <td><input type="text" name="product-category"></td>
           <td><input type="text" name="product-description"></td>
           <td><input type="file" name="product-img"></td>
           <td><input type="text" name="product-price"></td>
