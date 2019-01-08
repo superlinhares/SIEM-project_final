@@ -63,10 +63,10 @@ CREATE TABLE address (
 ); */
 
 
-INSERT INTO user (id, real_name, email, username, password, address, dob, tel, admin) 
+INSERT INTO users (id, real_name, email, username, password, address, dob, tel, admin) 
 VALUES (DEFAULT, 'admin', 'admin@gmail.com', 'admin', 'password', 'Rua do admin, nº1, Curral de Moinas', '1994-01-01', '+351912223344', 'TRUE');
 
-INSERT INTO user (id, real_name, email, username, password, address, dob, tel, admin) 
+INSERT INTO users (id, real_name, email, username, password, address, dob, tel, admin) 
 VALUES (DEFAULT, 'user', 'user@gmail.com', 'user', 'password', 'Rua do user, nº2, Curral de Moinas', '1994-01-01', '+351913334455', 'FALSE');
 
 INSERT INTO category (id, name)

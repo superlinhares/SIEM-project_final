@@ -5,7 +5,7 @@
     $orderState = 'Em processamento';
     date_default_timezone_set('UTC');
     $now = date("d-m-Y H:i:s");
-    $stmt = $conn->prepare('INSERT INTO order
+    $stmt = $conn->prepare('INSERT INTO orders
                             VALUES (DEFAULT, ?, ?, ?, ?)');
     $stmt->execute(array($now, $username, $userAddress, $orderState));
     return $conn->lastInsertId();

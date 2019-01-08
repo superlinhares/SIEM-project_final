@@ -21,9 +21,11 @@
       else 
         $_SESSION['admin'] = false;
       $_SESSION['success_messages'][] = 'Login successful';
-    } else 
-        $_SESSION['error_messages'][] = 'Login failed';
+    } else
+      $_SESSION['error_messages'][] = 'Login failed';
     
-    if (isset($_SERVER['HTTP_REFERER'])) header('Location: ' . $_SERVER['HTTP_REFERER']); 
-    else header('Location: ' . $BASE_URL);
+    if (isset($_SERVER['HTTP_REFERER'])) 
+      header('Location: ' . $_SERVER['HTTP_REFERER']); 
+    else 
+      header('Location: ' . $BASE_URL);
 ?>
