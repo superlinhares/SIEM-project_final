@@ -1,7 +1,5 @@
 <?php 
+  include_once('../../config/init.php');
 
-include_once('../../config/init.php');
-
-$smarty->display('contacts/contacts.tpl');
-
+  $smarty->display('contacts/contacts.tpl');
 ?>

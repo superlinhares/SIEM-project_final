@@ -1,8 +1,7 @@
 <?php
+  include_once ('../../config/init.php');
 
-include_once ('../../config/init.php');
-
-$smarty->display('shopping_cart/shopping_cart.tpl');
+  $smarty->display('shopping_cart/shopping_cart.tpl');
 ?>
 
 

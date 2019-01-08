@@ -1,7 +1,7 @@
 <?php 
 
 include_once('../../../../config/init.php');
-include_once ($BASE_DIR . '/database/.php');
+include_once ($BASE_DIR . '/database/product.php');
 
 if (isset($_SESSION['admin'])) {
   $products = getAllProducts();

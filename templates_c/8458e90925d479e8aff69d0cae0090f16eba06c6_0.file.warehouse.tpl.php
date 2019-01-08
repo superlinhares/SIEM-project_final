@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-21 17:05:19
+/* Smarty version 3.1.33, created on 2019-01-08 08:32:24
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\admin\warehouse\warehouse.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1d8dcf2bdea2_93041277',
+  'unifunc' => 'content_5c34d09874f019_27946322',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8458e90925d479e8aff69d0cae0090f16eba06c6' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\admin\\warehouse\\warehouse.tpl',
-      1 => 1545440501,
+      1 => 1546965053,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c1d8dcf2bdea2_93041277 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c34d09874f019_27946322 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>

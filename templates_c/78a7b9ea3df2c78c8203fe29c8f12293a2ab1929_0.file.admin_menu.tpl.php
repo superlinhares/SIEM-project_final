@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-12-20 03:57:13
+/* Smarty version 3.1.33, created on 2019-01-08 06:01:25
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\admin\admin_menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c1b8399cadbc2_69950986',
+  'unifunc' => 'content_5c34ad3564fe37_84119267',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '78a7b9ea3df2c78c8203fe29c8f12293a2ab1929' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\admin\\admin_menu.tpl',
-      1 => 1545299092,
+      1 => 1546456159,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1b8399cadbc2_69950986 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c34ad3564fe37_84119267 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="account-admin-menu-page">
   <a href="user.data.php"> <!--FIXME: HREF -->
     <div class="single-container user-container">
@@ -36,7 +36,7 @@ function content_5c1b8399cadbc2_69950986 (Smarty_Internal_Template $_smarty_tpl)
       <span class="container-description">Confirma ou altera a tua morada de entrega e faturação</span>		  
     </div>
   </a>
-  <a href="user.orders.php"> <!--FIXME: HREF -->
+  <a href="user.order.php"> <!--FIXME: HREF -->
     <div class="single-container order-container">
       <img src="../../img/order.png" class="container-img">
       <h2 class="container-title">Encomendas</h2>
