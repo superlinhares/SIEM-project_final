@@ -29,6 +29,7 @@
     foreach ($categories as $category) {
       if ($category['name'] === $categoryName) return $category['id'];
     }
-    return getCategoryId(createCategory($categoryName));
+    createCategory($categoryName);
+    return $conn->lastInsertId();
   }
 ?>

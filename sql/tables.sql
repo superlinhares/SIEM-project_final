@@ -14,7 +14,7 @@ CREATE TABLE user (
 /* Categoty Table */
 CREATE TABLE category (
   id SERIAL NOT NULL PRIMARY KEY,
-  name VARCHAR NOT NULL
+  name VARCHAR NOT NULL UNIQUE
 );
 
 /* Product Table */
