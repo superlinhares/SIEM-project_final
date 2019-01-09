@@ -17,21 +17,21 @@
     $page = 1;
 
   if (!isset($categoryId)) 
-    die(header('Location: list_categories.php'));
+    die(header('Location: ' . $BASE_URL . 'pages/store/list_categories.php'));
 
   $category = getCategoryById($categoryId);
 
   if (!isset($category))
-    die(header('Location: list_categories.php'));
+    die(header('Location: ' . $BASE_URL . 'pages/store/list_categories.php'));
 
   if (isset($name) && isset($min) && isset($max)) 
     $products = getProductsBySearch($categoryId, $name, $min, $max);
   else
-    $products = getProductsByCategory($categoryId);  //TODO: page
+    $products = getProductsByCategory($categoryId, $page);  
   
-  //$smarty->assign('page', $page); TODO:
   $smarty->assign('products', $products);
   $smarty->assign('category', $category);
+  $smarty->assign('page', $page);
   $smarty->display('product/list.tpl');
 ?>
 

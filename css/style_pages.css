@@ -135,12 +135,14 @@ p.second-p {
 /* Store page */
 #store {
   display: grid;  
-  grid-template-rows: 20em auto auto;
+  grid-template-rows: 20em auto auto auto auto;
   grid-row-gap: 2em;
   grid-template-areas: 
   "store-header"
+  "search-bar"
   "categories"
-  "products";
+  "products"
+  "pagination";
 }
 
 #store > header.store-header {
@@ -164,6 +166,25 @@ p.second-p {
   font-size: 4em;
   font-weight: bold;
 }
+
+#store .search-bar {
+  grid-area: search-bar; 
+  justify-self: center; 
+}
+
+#store .pagination {
+  grid-area: pagination;  
+  justify-self: center;  
+  padding-bottom: 2em;
+  font-size: 2em;
+  color: #83BB66;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: darkgreen;
+}
+
 
 #categories {
   margin: 2em;
@@ -192,9 +213,8 @@ p.second-p {
 #products {
   margin: 2em;
   grid-area: products;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
   grid-gap: 2em;
 }
 

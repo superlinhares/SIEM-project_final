@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 11:15:54
+/* Smarty version 3.1.33, created on 2019-01-09 11:04:59
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\product\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2d0dea471760_43231995',
+  'unifunc' => 'content_5c3645dba47e81_91222699',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a9083e43fc67a57997827a327a61f0a4b9030c5b' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\product\\list.tpl',
-      1 => 1545299092,
+      1 => 1547060046,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c2d0dea471760_43231995 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3645dba47e81_91222699 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -32,7 +32,18 @@ function content_5c2d0dea471760_43231995 (Smarty_Internal_Template $_smarty_tpl)
   <header class="store-header">
     <h1 class="page-title">Os Nossos Pratos</h1>
   </header>
-  <section id='products'>    
+    <div class="search-bar">
+      <form action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/pages/store/list_products.php" method="get">
+        <input type="hidden" name="category_id" value="<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
+">
+        <input type="text" name="name" placeholder="nome">
+        <input type="text" name="min" placeholder="preço mínimo">
+        <input type="text" name="max" placeholder="preço máximo">
+        <input type="submit" value="Procurar">
+      </form>   
+    </div>
+  <section id='products'>
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'product');
 if ($_from !== null) {
@@ -76,6 +87,20 @@ foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>    
   </section>
+    <div class="pagination">
+       <?php if (($_smarty_tpl->tpl_vars['page']->value === 1)) {?>
+        <a>&lt;</a>
+       <?php } else { ?> 
+        <a href="?category_id=<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
+&page=<?php echo $_smarty_tpl->tpl_vars['page']->value-1;?>
+">&lt;</a>
+       <?php }?>  
+      <?php echo $_smarty_tpl->tpl_vars['page']->value;?>
+ 
+      <a href="?category_id=<?php echo $_smarty_tpl->tpl_vars['category']->value['id'];?>
+&page=<?php echo $_smarty_tpl->tpl_vars['page']->value+1;?>
+">&gt;</a>
+    </div>
 </div>
 
 <!--FIXME: Comments only for individual products

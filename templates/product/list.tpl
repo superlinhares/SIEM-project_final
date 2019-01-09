@@ -6,7 +6,16 @@
   <header class="store-header">
     <h1 class="page-title">Os Nossos Pratos</h1>
   </header>
-  <section id='products'>    
+    <div class="search-bar">
+      <form action="{$BASE_URL}/pages/store/list_products.php" method="get">
+        <input type="hidden" name="category_id" value="{$category.id}">
+        <input type="text" name="name" placeholder="nome">
+        <input type="text" name="min" placeholder="preço mínimo">
+        <input type="text" name="max" placeholder="preço máximo">
+        <input type="submit" value="Procurar">
+      </form>   
+    </div>
+  <section id='products'>
     {foreach from=$products item=$product}
       <article class="product-container">
         <!-- TODO: Acrescentar as descrições dos produtos-->
@@ -32,6 +41,15 @@
       </article>
     {/foreach}    
   </section>
+    <div class="pagination">
+       {if ($page === 1)}
+        <a>&lt;</a>
+       {else} 
+        <a href="?category_id={$category.id}&page={$page-1}">&lt;</a>
+       {/if}  
+      {$page} 
+      <a href="?category_id={$category.id}&page={$page+1}">&gt;</a>
+    </div>
 </div>
 
 <!--FIXME: Comments only for individual products

@@ -21,20 +21,21 @@
     return $stmt->fetch();
   }
 
-  function getProductsByCategory($categoryId) {
+  function getProductsByCategory($categoryId, $page) {
     global $conn;
     $stmt = $conn->prepare('SELECT *
                             FROM product
                             WHERE cat_id = ?
-                            ORDER BY id DESC');
-    $stmt->execute(array($categoryId)); 
+                            ORDER BY id DESC
+                            LIMIT 2 OFFSET ?');
+    $stmt->execute(array($categoryId, ($page-1)*2)); 
     return $stmt->fetchALL();                          
   }
 
-  function getProductBySearch($categoryId, $name, $min, $max) {
+  function getProductsBySearch($categoryId, $name, $min, $max) {
     global $conn;
 
-    $query = 'SELECT * FROM product where cat_id = ?';
+    $query = 'SELECT * FROM product WHERE cat_id = ?';
     $params = array($categoryId);
 
     if ($name !== '') {
@@ -51,7 +52,7 @@
       $query .= ' AND price <= ?';
       $params[] = $max;
     }
-
+    
     $stmt = $conn->prepare($query);
     $stmt->execute($params);
     return $stmt->fetchAll();
