@@ -1,6 +1,5 @@
 <?php 
   include_once('../../../config/init.php');
-  include_once('../../../database/warehouse.php');
   include_once('../../../database/product.php');
   include_once('../../../database/category.php');
 

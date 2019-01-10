@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-09 11:04:59
+/* Smarty version 3.1.33, created on 2019-01-10 09:36:20
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\product\list.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3645dba47e81_91222699',
+  'unifunc' => 'content_5c3782946614b2_25684272',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a9083e43fc67a57997827a327a61f0a4b9030c5b' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\product\\list.tpl',
-      1 => 1547060046,
+      1 => 1547141623,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c3645dba47e81_91222699 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3782946614b2_25684272 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -50,17 +50,13 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
 ?>
       <article class="product-container">
-        <!-- TODO: Acrescentar as descrições dos produtos-->
-        <!--Clicar no produto passa para a pg do produto -->
         <span class="dish-label name-label">Nome do prato</span>
         <p class="dish-name"><?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
 </p> 
-        <a class="dish-img" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/store/list_product.php?productId=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
-"><img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+        <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /img/products/<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
-.jpg" alt="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
-"></a>
+.jpg" class="dish-img" alt="<?php echo $_smarty_tpl->tpl_vars['product']->value['name'];?>
+">
         <form class="dish-order" action="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /actions/order/add_to_cart.php?action=add&id=<?php echo $_smarty_tpl->tpl_vars['product']->value['id'];?>
 " method="POST">

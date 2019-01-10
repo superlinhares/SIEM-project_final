@@ -48,7 +48,6 @@
 		}
 		$_SESSION['success_messages'][] = 'Produto(s) adicionado(s) ao carrinho com sucesso';
 	}
-	// FIXME: ver isto 
 	if ($_GET['action'] == 'delete'){
 		// Loop through all products in the shopping cart until it matches with GET id variable
 		foreach ($_SESSION['shopping_cart'] as $key => $product) {

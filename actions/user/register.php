@@ -3,7 +3,7 @@
   include_once($BASE_DIR . '/database/user.php');  
 
   if (!$_POST['username'] || !$_POST['realname'] || !$_POST['password']) {
-    $_SESSION['error_messages'][] = 'All fields are mandatory'; //FIXME: acrescentar mais verificações
+    $_SESSION['error_messages'][] = 'All fields are mandatory'; //TODO: acrescentar mais verificações
     $_SESSION['form_values'] = $_POST;
     header("Location: $BASE_URL");
     exit;

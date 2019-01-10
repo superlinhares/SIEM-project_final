@@ -4,7 +4,7 @@
 * If you’re developing your site anywhere else besides the root of your webserver, 
 * you should change the path your session cookie is valid for. 
 */
-//session_set_cookie_params(3600, '/~up201308136/project_final'); //TODO: change this later
+//session_set_cookie_params(3600, '/~up201308136/siem_project_final'); //TODO: change this later
 
 session_start();
 

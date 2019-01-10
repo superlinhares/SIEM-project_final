@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-10 08:37:19
+/* Smarty version 3.1.33, created on 2019-01-10 08:53:25
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3774bf904214_61023431',
+  'unifunc' => 'content_5c3778858c4a71_97713962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '661ba72cffd82346c344a7d44c7c04acbd5dee0a' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\header.tpl',
-      1 => 1547138203,
+      1 => 1547138663,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:shopping_cart/shopping_table/shopping_cart_table.tpl' => 1,
   ),
 ),false)) {
-function content_5c3774bf904214_61023431 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3778858c4a71_97713962 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -72,7 +72,6 @@ function content_5c3774bf904214_61023431 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <nav id="nav">                  						
           <ul>	
-            <!-- TODO: Fazer isto compatível com a nova estrutura -->						          
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /pages/about/about.php">Sobre</a></li>
             <li><a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
@@ -114,7 +113,7 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['error']->value) {
 ?>
               <div class="error"><?php echo $_smarty_tpl->tpl_vars['error']->value;?>
- <!--<a class="close" href="#">&#215;</a>--></div> <!--TODO: delete close later -->                        
+</div>
             <?php
 }
 }

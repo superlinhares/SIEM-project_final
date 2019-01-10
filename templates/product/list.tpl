@@ -18,11 +18,9 @@
   <section id='products'>
     {foreach from=$products item=$product}
       <article class="product-container">
-        <!-- TODO: Acrescentar as descrições dos produtos-->
-        <!--Clicar no produto passa para a pg do produto -->
         <span class="dish-label name-label">Nome do prato</span>
         <p class="dish-name">{$product.name}</p> 
-        <a class="dish-img" href="{$BASE_URL}/pages/store/list_product.php?productId={$product.id}"><img src="{$BASE_URL}/img/products/{$product.id}.jpg" alt="{$product.name}"></a>
+        <img src="{$BASE_URL}/img/products/{$product.id}.jpg" class="dish-img" alt="{$product.name}">
         <form class="dish-order" action="{$BASE_URL}/actions/order/add_to_cart.php?action=add&id={$product.id}" method="POST">
           <span class="dish-label price-label">Preço / unidade</span>
           <span class="dish-price">{$product.price} €</span>
