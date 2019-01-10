@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_reset.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_common.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_pages.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_about.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_contacts.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_faq.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_effects.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_popup.css">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto+Condensed|" rel="stylesheet">
@@ -27,7 +30,6 @@
         </div>
         <nav id="nav">                  						
           <ul>	
-            <!-- TODO: Fazer isto compatível com a nova estrutura -->						          
             <li><a href="{$BASE_URL}/pages/about/about.php">Sobre</a></li>
             <li><a href="{$BASE_URL}/pages/store/list_categories.php">Loja</a></li>
             <li><a href="{$BASE_URL}/pages/contacts/contacts.php">Contactos</a></li>
@@ -55,7 +57,7 @@
         <section id="messages">
           {if (isset($ERROR_MESSAGES))}
             {foreach $ERROR_MESSAGES as $error}
-              <div class="error">{$error} <!--<a class="close" href="#">&#215;</a>--></div> <!--TODO: delete close later -->                        
+              <div class="error">{$error}</div>
             {/foreach}
           {/if}
 

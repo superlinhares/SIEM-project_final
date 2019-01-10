@@ -1,0 +1,81 @@
+#contacts {
+  display: grid;  
+  grid-template-rows: 20em auto;
+  grid-row-gap: 2em;
+  grid-template-areas: 
+  "contacts-header"
+  "contacts-info";
+}
+
+#contacts > header.contacts-header {
+  grid-area: contacts-header;
+  background-image: url("../img/healthy-food-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: 
+  "."
+  "page-title"
+  ".";  
+}
+
+#contacts > header.contacts-header > h1.page-title {
+  grid-area: page-title;
+  justify-self: center;
+  color: white;
+  font-family: borealis;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#contacts-info {
+  margin: 2em;
+  grid-area: contacts-info;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  grid-template-areas:
+  "contacts-info contacts-map";
+}
+
+#contacts-info p.contacts-details-header {
+  justify-self: center;
+  font-family: borealis;
+  font-size: 2em;
+  color: #83BB66;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  padding-left: 25%;
+}
+
+#contacts-info p.contacts-details {
+  font-size: 1em;
+  padding-left: 25%;
+}
+
+#contacts img.social-logo {
+  width: 2.5em;
+  margin: 1em 2em 0em 0em;
+}
+
+#contacts img.contacts-map {
+  max-width: 100%;
+  height: auto;
+}
+
+/*isto podia ser uma categoria: todas imagens/logos ligados a esta classe 
+vão ter a transição do opacity*/
+
+/*ISTO, SE CALHAR, DEVIA IR PARA A PÁGINA STYLE_EFFECTS, CERTO?
+Aliás, se na página dos efeitos se retirar o "#footer" do código do social-logo:hover,
+o efeito dá para todos os social-logos de todas as páginas e não só para o footer*/
+#contacts img.social-logo:hover {
+  opacity: 0.5;
+  transition: opacity ease-in-out 200ms;
+}
+
+#contacts img.contacts-map:hover {
+  opacity: 0.5;
+  transition: opacity ease-in-out 200ms;
+}

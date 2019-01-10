@@ -1,0 +1,74 @@
+#faq {
+  display: grid;  
+  grid-template-rows: 20em auto;
+  grid-row-gap: 2em;
+  grid-template-areas: 
+  "faq-header"
+  "faq-info";
+}
+
+#faq > header.faq-header {
+  grid-area: faq-header;
+  background-image: url("../img/healthy-food-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: 
+  "."
+  "page-title"
+  ".";  
+}
+
+#faq > header.faq-header > h1.page-title {
+  grid-area: page-title;
+  justify-self: center;
+  color: white;
+  font-family: borealis;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#faq > .faq-info {
+  margin: 2em;
+  grid-area: faq-info;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 2em;
+  grid-template-areas:
+  "faq-general"
+  "faq-brand"
+  "faq-meals"
+  "faq-delivery"
+  "faq-payment";
+}
+
+#faq .faq-info .faq-question {
+  background: #83BB66;
+  color: white;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0.5em;
+}
+
+#faq .faq-info .faq-answer {
+  background: white;
+  color: black;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0.5em;
+}
+
+#faq .faq-info h2.faq-question-header {
+  text-align: center;
+  justify-self: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+#faq .faq-info h3.p-question {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}

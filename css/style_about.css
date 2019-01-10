@@ -1,0 +1,59 @@
+/* About */
+#about {
+  display: grid;  
+  grid-template-rows: 20em auto;
+  grid-row-gap: 2em;
+  grid-template-areas: 
+  "about-header"
+  "information";
+}
+
+#about > header.about-header {
+  grid-area: about-header;
+  background-image: url("../img/healthy-food-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas: 
+  "."
+  "page-title"
+  ".";  
+}
+
+#about > header.about-header > h1.page-title {
+  grid-area: page-title;
+  justify-self: center;
+  color: white;
+  font-family: borealis;
+  font-size: 4em;
+  font-weight: bold;
+}
+
+#information {
+  margin: 2em;
+  grid-area: information;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  grid-template-areas:
+  "about-info about-img"
+}
+
+#information p.about-title {
+  justify-self: center;
+  font-family: borealis;
+  font-size: 2em;
+  color: #83BB66;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+#information p.about-text {
+  text-align: justify;
+}
+
+#information .about-img {
+  max-width: 100%;
+  height: auto;
+}

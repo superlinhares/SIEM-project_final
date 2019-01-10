@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-02 15:08:00
+/* Smarty version 3.1.33, created on 2019-01-10 08:37:19
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c2d4450a75f71_82920280',
+  'unifunc' => 'content_5c3774bf904214_61023431',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '661ba72cffd82346c344a7d44c7c04acbd5dee0a' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\header.tpl',
-      1 => 1546470472,
+      1 => 1547138203,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:shopping_cart/shopping_table/shopping_cart_table.tpl' => 1,
   ),
 ),false)) {
-function content_5c2d4450a75f71_82920280 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3774bf904214_61023431 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -38,6 +38,12 @@ function content_5c2d4450a75f71_82920280 (Smarty_Internal_Template $_smarty_tpl)
 /css/style_common.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_pages.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_about.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_contacts.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_faq.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_effects.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
