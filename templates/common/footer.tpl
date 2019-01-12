@@ -8,7 +8,7 @@
         <h1>Vamos Começar!</h1>
       </header>
 			<footer class="footer-start-footer">
-        <a href="{$BASE_URL}/pages/store/list_products.php"><button class="default-button">Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
+        <a href="{$BASE_URL}/pages/store/list_categories.php"><button class="default-button">Fazer Pedido</button></a>	<!--FIXME: fix store path-->	
       </footer>
 		</section>
 

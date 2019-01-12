@@ -172,6 +172,22 @@ p.second-p {
   justify-self: center; 
 }
 
+.search-bar input[type=text] {
+  height: 1em;
+}
+
+.search-bar input[type=submit] {
+  height: 1.5em;
+	width: auto;
+	font-size: 1em;
+	box-shadow: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: 2px solid darkgreen;
+	border-right: 2px solid darkgreen;
+	padding: 5px;
+}
+
 #store .pagination {
   grid-area: pagination;  
   justify-self: center;  
@@ -317,9 +333,8 @@ p.second-p {
 button.checkout {
 	width: 6em;
 	margin: auto;
-	font-size: 14pt;
+	font-size: 1.5em;
 	border-radius: 6px;
-	transition: .4s;
 	background: #83BB66;
 	border-top: none;
 	border-left: none;

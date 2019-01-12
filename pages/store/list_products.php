@@ -17,12 +17,12 @@
     $page = 1;
 
   if (!isset($categoryId)) 
-    die(header('Location: ' . $BASE_URL . 'pages/store/list_categories.php'));
+    die(header('Location: ' . $BASE_URL . '/pages/store/list_categories.php'));
 
   $category = getCategoryById($categoryId);
 
   if (!isset($category))
-    die(header('Location: ' . $BASE_URL . 'pages/store/list_categories.php'));
+    die(header('Location: ' . $BASE_URL . '/pages/store/list_categories.php'));
 
   if (isset($name) && isset($min) && isset($max)) 
     $products = getProductsBySearch($categoryId, $name, $min, $max);
