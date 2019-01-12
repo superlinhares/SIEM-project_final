@@ -35,8 +35,8 @@
                             FROM product
                             WHERE cat_id = ?
                             ORDER BY id DESC
-                            LIMIT 2 OFFSET ?');
-    $stmt->execute(array($categoryId, ($page-1)*2)); 
+                            LIMIT 8 OFFSET ?');
+    $stmt->execute(array($categoryId, ($page-1)*8)); 
     return $stmt->fetchALL();                          
   }
 
