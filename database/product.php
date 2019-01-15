@@ -6,11 +6,18 @@
 
   function addProduct($productName, $productCategoryId, $productDescription, $productPrice, $productStock) {
     global $conn; 
-    $sql = 'INSERT INTO product (id, name, description, price, cat_id, stock)
-            VALUES (DEFAULT, :name, :description, :price, :cat_id, :stock)';    								
-    $stmt = $conn->prepare($sql);						
+    $query = 'INSERT INTO product (id, name, description, price, cat_id, stock)
+              VALUES (DEFAULT, :name, :description, :price, :cat_id, :stock)';    								
+    $stmt = $conn->prepare($query);						
     $stmt->execute( array(':name'=>$productName, ':description'=>$productDescription, ':price'=>$productPrice, ':cat_id'=>$productCategoryId, ':stock'=>$productStock) );    
-  } 
+  }
+  
+  function deleteProduct($productId) {
+    global $conn;
+    $stmt = $conn->prepare('DELETE FROM product
+                            WHERE id = ?');
+    $stmt->execute(array($productId));
+  }
 
   function getAllProducts() {
     global $conn;

@@ -5,10 +5,10 @@
   grid-row-gap: 2em;
   grid-template-areas: 
   "about-header"
-  "information";
+  "about-first-section";
 }
 
-#about > header.about-header {
+#about .about-header {
   grid-area: about-header;
   background-image: url("../img/healthy-food-3.jpg");
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   ".";  
 }
 
-#about > header.about-header > h1.page-title {
+#about .about-header .page-title {
   grid-area: page-title;
   justify-self: center;
   color: white;
@@ -30,30 +30,44 @@
   font-weight: bold;
 }
 
-#information {
+#about p {
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+#about-first-section {
   margin: 2em;
-  grid-area: information;
+  grid-area: about-first-section;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2em;
+  grid-template-rows: auto auto;
+  grid-gap: 2em;  
   grid-template-areas:
-  "about-info about-img"
+  "first-section-left first-section-right";
 }
 
-#information p.about-title {
-  justify-self: center;
-  font-family: borealis;
-  font-size: 2em;
-  color: #83BB66;
-  font-weight: bold;
-  padding-bottom: 1em;
+#about-first-section .first-section-left {
+  grid-area: first-section-left;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 2em;  
+  grid-template-areas:
+  "about-info"
+  "siem";
 }
 
-#information p.about-text {
-  text-align: justify;
+#about-first-section .first-section-left .about-info {
+  grid-area: about-info;
+} 
+
+#about-first-section .first-section-left .siem {
+  grid-area: siem;
 }
 
-#information .about-img {
-  max-width: 100%;
-  height: auto;
+#about-first-section .first-section-right {
+  grid-area: first-section-right;
+}
+
+#about-first-section .first-section-right .first-section-img {
+  width: 100%;
 }

@@ -1,5 +1,5 @@
 /* Users Table */
-CREATE TABLE user (
+CREATE TABLE users (
 	id SERIAL NOT NULL PRIMARY KEY,
 	real_name VARCHAR NOT NULL, 
 	email VARCHAR NOT NULL, 
@@ -18,7 +18,7 @@ CREATE TABLE category (
 );
 
 /* Product Table */
-CREATE TABLE  (
+CREATE TABLE product (
 	id SERIAL NOT NULL PRIMARY KEY,
 	name VARCHAR NOT NULL,
 	description VARCHAR NOT NULL,
@@ -28,12 +28,12 @@ CREATE TABLE  (
 );
 
 /* Orders Table*/
-CREATE TABLE order (
+CREATE TABLE orders (
 	id SERIAL NOT NULL PRIMARY KEY,
 	order_date VARCHAR NOT NULL,
 	username VARCHAR REFERENCES user(username) NOT NULL,
 	address VARCHAR NOT NULL, 
-	state VARCHAR NOT NULL	
+	state_state VARCHAR NOT NULL	
 );
 
 /* Order line*/

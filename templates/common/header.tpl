@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="{$BASE_URL}/img/groceries.png">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_reset.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_common.css">
-    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_pages.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_home.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_store.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_account.css">
+    <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_shopping_cart.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_about.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_contacts.css">
     <link rel="stylesheet" type="text/css" href="{$BASE_URL}/css/style_faq.css">

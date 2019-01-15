@@ -1,0 +1,39 @@
+
+/* Shopping cart page styling */
+#shopping-cart {
+  display: grid;
+  min-height: 10em;
+  padding: 4em;
+  grid-row-gap: 3em;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto; 
+  grid-template-areas: 
+  ". page-title ."
+  ". shopping-table .";
+}
+.page-title {
+  grid-area: page-title;
+}
+
+#shopping-cart .shopping-table {  
+  grid-area: shopping-table;
+}
+
+button.checkout {
+	width: 6em;
+	margin: auto;
+	font-size: 1.5em;
+	border-radius: 6px;
+	background: #83BB66;
+	border-top: none;
+	border-left: none;
+	border-bottom: 4px solid darkgreen;
+	border-right: 4px solid darkgreen;
+	color: white;
+	cursor: pointer;
+	padding: 5px;	
+}
+
+table.store-table a {
+	text-decoration: none;
+}

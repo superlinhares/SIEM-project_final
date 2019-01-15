@@ -1,4 +1,4 @@
-<div id="account-admin-menu-page">
+<div class="account-menu-page">
   <a href="user.data.php"> <!--FIXME: HREF -->
     <div class="single-container user-container">
       <img src="../../img/user.png" class="container-img">
@@ -13,7 +13,7 @@
       <span class="container-description">Confirma ou altera a tua morada de entrega e faturação</span>		  
     </div>
   </a>
-  <a href="user.order.php"> <!--FIXME: HREF -->
+  <a href="{$BASE_URL}/pages/account/user/order/order.php"> <!--FIXME: HREF -->
     <div class="single-container order-container">
       <img src="../../img/order.png" class="container-img">
       <h2 class="container-title">Encomendas</h2>

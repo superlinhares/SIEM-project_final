@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-10 08:53:25
+/* Smarty version 3.1.33, created on 2019-01-15 03:26:58
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3778858c4a71_97713962',
+  'unifunc' => 'content_5c3dc3827e6102_30209565',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '661ba72cffd82346c344a7d44c7c04acbd5dee0a' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\header.tpl',
-      1 => 1547138663,
+      1 => 1547519811,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:shopping_cart/shopping_table/shopping_cart_table.tpl' => 1,
   ),
 ),false)) {
-function content_5c3778858c4a71_97713962 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3dc3827e6102_30209565 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -37,7 +37,13 @@ function content_5c3778858c4a71_97713962 (Smarty_Internal_Template $_smarty_tpl)
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_common.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/css/style_pages.css">
+/css/style_home.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_store.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_account.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
+/css/style_shopping_cart.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /css/style_about.css">
     <link rel="stylesheet" type="text/css" href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>

@@ -16,10 +16,7 @@
     if (isLoginCorrect($username, $password)) {
       $_SESSION['username'] = $username;
       // Verify if user is an admin
-      if (isUserAdmin($username))      
-        $_SESSION['admin'] = true;    
-      else 
-        $_SESSION['admin'] = false;
+      if (isUserAdmin($username)) $_SESSION['admin'] = true;    
       $_SESSION['success_messages'][] = 'Login successful';
     } else
       $_SESSION['error_messages'][] = 'Login failed';

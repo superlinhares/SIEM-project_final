@@ -173,15 +173,14 @@ body {
 }
 
 #footer > .footer-container {
-  background-color: white;
   display: grid;
-  grid-template-columns: 1em 1fr 1fr 1fr 1em;
+  grid-template-columns: 1em auto auto auto auto 1em;
   grid-template-rows: 2em auto 2em;
   grid-gap: 1em;
   grid-template-areas: 
-  ". . . . ."
-  ". footer-left footer-center footer-right ."
-  ". . . . .";
+  ". . . . . ."
+  ". footer-left footer-center footer-right footer-siem ."
+  ". . . . . .";
 }
 
 #footer > .footer-container h1 {
@@ -189,6 +188,11 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   margin-bottom: 1em;
+}
+
+#footer > .footer-container h2 {  
+  font-weight: bold;
+  font-size: 1.2em;  
 }
 
 #footer > .footer-container > .footer-left {
@@ -223,6 +227,10 @@ body {
 #footer > .footer-container > .footer-right img.social-logo {
   width: 2.5em;
   margin: 1em 2em 0em 0em;
+}
+
+#footer > .footer-container > .footer-siem {
+  grid-area: footer-siem;
 }
 
 #footer > .footer-end {
@@ -271,6 +279,9 @@ h1 {
   font-size: 2em;
 }
 
+h2 {
+  font-size: 1.5em;
+}
 
 /* Button default styling */
 button.default-button, input[type=submit] {

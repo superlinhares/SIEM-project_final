@@ -11,20 +11,10 @@
     <tr>
       <td>{$product.name}</td>
       <td>{$product.price} €</td>
-      <td>
-        <!-- TODO: se  tiver tempo      
-        <select name="{$product.id}-quantity">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>--> 
-        {$product.quantity}
-      </td>
+      <td>{$product.quantity}</td>
       <td>{$productTotal[$product.id]} €</td>
       <td>
-        <a href="{$BASE_URL}/actions/order/add_to_cart.php?action=delete&id={$product.id}">
+        <a href="{$BASE_URL}/actions/order/remove_from_cart.php?action=delete&id={$product.id}">
           <i class="fas fa-trash" style="color: red"></i>
         </a>
       </td>	

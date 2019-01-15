@@ -1,0 +1,183 @@
+/* Account page */
+.account-menu-page {
+  padding: 6em;
+  display: grid;
+  grid-template-rows: 1fr 1fr auto;
+  grid-row-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6em;
+  grid-template-areas:
+  "user-container  address-container"
+  "order-container password-container"
+  "admin-container .";
+}
+
+.account-menu-page a {
+  text-decoration: none;
+  color: black;
+}
+
+.account-menu-page .user-container {
+  grid-area: user-container;
+  background-color: rgb(245,245,245);
+}
+
+.account-menu-page .address-container {
+  grid-area: address-container;
+  background-color: rgb(245,245,245);
+}
+
+.account-menu-page .order-container {
+  grid-area: order-container;
+  background-color: rgb(245,245,245);
+}
+
+.account-menu-page .password-container {
+  grid-area: password-container;
+  background-color: rgb(245,245,245);
+}
+
+.account-menu-page .admin-container {
+  grid-area: admin-container;
+  background-color: rgb(245,245,245);
+}
+
+.account-menu-page .single-container {
+  display: grid;
+  padding: 2em;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 2em;
+  grid-template-areas: 
+  "container-img container-title"
+  "container-img container-description";
+}
+
+.account-menu-page .container-img {
+  grid-area: container-img;
+}
+
+.account-menu-page .container-title {
+  grid-area: container-title;
+}
+
+.account-menu-page .container-description {
+  grid-area: container-description;
+}
+
+/* Admin panel page */
+#admin-panel {
+  padding: 6em;
+  display: grid;
+  grid-template-rows: 1fr 1fr ;
+  grid-row-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6em;
+  grid-template-areas:
+  "admin-user-container  admin-order-container"
+  "admin-warehouse-container . ";
+}
+
+#admin-panel a {
+  text-decoration: none;
+  color: black;
+}
+
+#admin-panel .admin-user-container {
+  grid-area: admin-user-container;
+  background-color: rgb(245,245,245);
+}
+
+#admin-panel .admin-order-container {
+  grid-area: admin-order-container;
+  background-color: rgb(245,245,245);
+}
+
+#admin-panel .admin-warehouse-container {
+  grid-area: admin-warehouse-container;
+  background-color: rgb(245,245,245);
+}
+
+#admin-panel .single-container {
+  display: grid;
+  padding: 2em;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: 2em;
+  grid-template-areas: 
+  "container-img container-title"
+  "container-img container-description";
+}
+
+#admin-panel .container-img {
+  grid-area: container-img;
+}
+
+#admin-panel .container-title {
+  grid-area: container-title;
+}
+
+#admin-panel .container-description {
+  grid-area: container-description;
+}
+
+/* Warehouse */
+#warehouse-page {  
+  display: grid;
+  min-height: 10em;
+  padding: 4em;
+  grid-row-gap: 3em;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  ". page-title ." 
+  ". warehouse-table ."
+  ". update-table .";
+}
+
+#warehouse-page .page-title {
+  grid-area: page-title;
+}
+
+#warehouse-page table.warehouse-table td {
+  overflow: auto;
+  max-width: 20em;
+}
+
+#warehouse-page .warehouse-table {
+  grid-area: warehouse-table;
+}
+
+#warehouse-page .update-table {
+  grid-area: update-table;
+}
+
+/* Order */
+#order-page {  
+  display: grid;
+  min-height: 10em;
+  padding: 4em;
+  grid-row-gap: 3em;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+  ". page-title ." 
+  ". order-table .";
+}
+
+#order-page .page-title {
+  grid-area: page-title;
+}
+
+#order-page table.order-table td {
+  overflow: auto;
+  max-width: 20em;
+}
+
+#order-page .order-table {
+  grid-area: order-table;
+}
+
+#order-page a {
+  text-decoration: none;
+}

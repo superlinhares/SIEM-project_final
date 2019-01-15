@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 09:40:35
-  from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\admin\admin_menu.tpl' */
+/* Smarty version 3.1.33, created on 2019-01-15 09:40:03
+  from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\user\user_menu.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3e1b134e24c6_00223725',
+  'unifunc' => 'content_5c3e1af3261d47_84449853',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '78a7b9ea3df2c78c8203fe29c8f12293a2ab1929' => 
+    '7a4f351574f11c75f85c3b506495a998d82fc906' => 
     array (
-      0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\admin\\admin_menu.tpl',
-      1 => 1547573978,
+      0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\user\\user_menu.tpl',
+      1 => 1547573960,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3e1b134e24c6_00223725 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3e1af3261d47_84449853 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="account-menu-page">
   <a href="user.data.php"> <!--FIXME: HREF -->
     <div class="single-container user-container">
@@ -49,14 +49,6 @@ function content_5c3e1b134e24c6_00223725 (Smarty_Internal_Template $_smarty_tpl)
       <img src="../../img/password.png" class="container-img">
       <h2 class="container-title">Mudar password</h2>
       <span class="container-description">Alterar a minha password</span>
-    </div>
-  </a>
-  <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/account/admin/admin_panel/admin_panel.php">
-    <div class="single-container admin-container">
-      <img src="../../img/admin.png" class="container-img">
-      <h2 class="container-title">Painel de administrador</h2>
-      <span class="container-description">Aceda ao painel de aministrador</span>
     </div>
   </a>
 </div><?php }

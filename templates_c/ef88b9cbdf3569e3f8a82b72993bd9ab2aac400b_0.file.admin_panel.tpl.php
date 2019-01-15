@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-08 08:26:03
+/* Smarty version 3.1.33, created on 2019-01-12 11:22:26
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\account\admin\admin_panel\admin_panel.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c34cf1bbce2d2_03706949',
+  'unifunc' => 'content_5c3a3e72c87109_15968643',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef88b9cbdf3569e3f8a82b72993bd9ab2aac400b' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\account\\admin\\admin_panel\\admin_panel.tpl',
-      1 => 1546456159,
+      1 => 1547316126,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:common/footer.tpl' => 1,
   ),
 ),false)) {
-function content_5c34cf1bbce2d2_03706949 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3a3e72c87109_15968643 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <!-- Header -->
 <?php $_smarty_tpl->_subTemplateRender("file:common/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -37,7 +37,7 @@ function content_5c34cf1bbce2d2_03706949 (Smarty_Internal_Template $_smarty_tpl)
     <span class="container-description">Ver, alterar ou apagar contas de utilizador</span>
   </div></a>				
   <a href="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
-/pages/account/admin/order.php"><div class="single-container admin-order-container"> <!--FIXME: path-->
+/pages/account/admin/order/order.php"><div class="single-container admin-order-container"> <!--FIXME: path-->
     <img src="<?php echo $_smarty_tpl->tpl_vars['BASE_URL']->value;?>
 /img/order.png" class="container-img">
     <h2 class="container-title">Gerir encomendas</h2>
