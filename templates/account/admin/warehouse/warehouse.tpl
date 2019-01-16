@@ -2,9 +2,9 @@
 {include file="common/header.tpl"}
 
 <!-- Main -->			
-<div id="warehouse-page">
+<div id="warehouse-page" class="default-page">
   <h1 class="page-title">Armazém</h1>
-  <table class="warehouse-table">
+  <table class="warehouse-table page-table">
     <tr>
       <th>ID</th>
       <th>Nome</th>

@@ -35,7 +35,8 @@
 
       <div class="footer-siem">        
         <h1>SIEM - Documentação</h1>
-        <h2>Browser: Google Chrome</h2>        
+        <h2>Browser: Google Chrome</h2>
+        <br>        
         <h2>Admin login</h2>
         <br>        
         <h3>username: admin</h3>

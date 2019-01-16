@@ -22,7 +22,8 @@
   function getAllProducts() {
     global $conn;
     $stmt = $conn->prepare('SELECT *
-                            FROM product');
+                            FROM product
+                            ORDER BY id ASC');
     $stmt->execute();
     return $stmt->fetchAll();
   }

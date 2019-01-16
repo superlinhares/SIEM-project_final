@@ -41,9 +41,19 @@
     $stmt = $conn->prepare('SELECT *
                             FROM order_line
                             WHERE order_id = ?
-                            ORDER BY product_id ASC');
+                            ORDER BY order_id DESC');
     $stmt->execute(array($orderId));
     return $stmt->fetchAll();
+  }
+
+  function getOrderStateById($orderId) {
+    global $conn;
+    $stmt = $conn->prepare('SELECT *
+                            FROM orders
+                            WHERE id = ?');
+    $stmt->execute(array($orderId));
+    $row = $stmt->fetch();
+    return $row['order_state'];
   }
 
   function deleteOrderById($orderId) {
@@ -60,6 +70,22 @@
     global $conn;
     $stmt = $conn->prepare("UPDATE orders
                             SET order_state = 'Confirmada'
+                            WHERE id = ?");
+    $stmt->execute(array($orderId));
+  }
+
+  function cancelOrderById($orderId) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE orders
+                            SET order_state = 'Cancelada'
+                            WHERE id = ?");
+    $stmt->execute(array($orderId));
+  }
+
+  function shipOrderById($orderId) {
+    global $conn;
+    $stmt = $conn->prepare("UPDATE orders
+                            SET order_state = 'Enviada'
                             WHERE id = ?");
     $stmt->execute(array($orderId));
   }

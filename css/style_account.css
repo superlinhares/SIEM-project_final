@@ -121,39 +121,8 @@
   grid-area: container-description;
 }
 
-/* Warehouse */
-#warehouse-page {  
-  display: grid;
-  min-height: 10em;
-  padding: 4em;
-  grid-row-gap: 3em;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-  ". page-title ." 
-  ". warehouse-table ."
-  ". update-table .";
-}
-
-#warehouse-page .page-title {
-  grid-area: page-title;
-}
-
-#warehouse-page table.warehouse-table td {
-  overflow: auto;
-  max-width: 20em;
-}
-
-#warehouse-page .warehouse-table {
-  grid-area: warehouse-table;
-}
-
-#warehouse-page .update-table {
-  grid-area: update-table;
-}
-
-/* Order */
-#order-page {  
+/* Default page */
+.default-page {  
   display: grid;
   min-height: 10em;
   padding: 4em;
@@ -162,22 +131,27 @@
   grid-template-rows: auto auto;
   grid-template-areas:
   ". page-title ." 
-  ". order-table .";
+  ". page-table ."
+  ". update-table .";
 }
 
-#order-page .page-title {
+.default-page .page-title {
   grid-area: page-title;
 }
 
-#order-page table.order-table td {
+.default-page table td {
   overflow: auto;
   max-width: 20em;
 }
 
-#order-page .order-table {
-  grid-area: order-table;
+.default-page .page-table {
+  grid-area: page-table;
 }
 
-#order-page a {
+.default-page .update-table {
+  grid-area: update-table;
+}
+
+.default-page table a{
   text-decoration: none;
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-15 09:31:16
+/* Smarty version 3.1.33, created on 2019-01-15 15:51:55
   from 'C:\Bitnami\wampstack-7.1.25-0\apache2\htdocs\siem_project_final\templates\common\footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c3e18e478d500_45194369',
+  'unifunc' => 'content_5c3e721b06fb83_59224621',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2c689c711d8e4ac7809a85d6c66be4e8eb0d0619' => 
     array (
       0 => 'C:\\Bitnami\\wampstack-7.1.25-0\\apache2\\htdocs\\siem_project_final\\templates\\common\\footer.tpl',
-      1 => 1547573393,
+      1 => 1547577950,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3e18e478d500_45194369 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3e721b06fb83_59224621 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- End of content -->
   </div>
 <!-- Still container -->
@@ -67,7 +67,8 @@ function content_5c3e18e478d500_45194369 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="footer-siem">        
         <h1>SIEM - Documentação</h1>
-        <h2>Browser: Google Chrome</h2>        
+        <h2>Browser: Google Chrome</h2>
+        <br>        
         <h2>Admin login</h2>
         <br>        
         <h3>username: admin</h3>
